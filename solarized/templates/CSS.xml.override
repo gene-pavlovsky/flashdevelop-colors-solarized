@@ -1,0 +1,36 @@
+<!-- COLORING_START -->
+<editor-style caret-fore={base0} caretline-back={base02} selection-fore={base2} selection-back={base01} margin-fore={base03} margin-back={base03} marker-fore={base03} marker-back={base01} colorize-marker-back="true" />
+<use-styles>
+	<style name="default" fore={base1} back={base03} size="11" font="Consolas" />
+	<style name="tag" fore={yellow} />
+	<style name="class" fore={yellow} />
+	<style name="pseudoclass" fore={yellow} />
+	<style name="unknown_pseudoclass" fore={red} />
+	<style name="operator" fore={yellow} />
+	<style name="identifier" />
+	<style name="unknown_identifier" fore={red} />
+	<style name="value" fore={cyan} />
+	<style name="comment" fore={base00} />
+	<style name="id" fore={yellow} />
+	<style name="important" fore={cyan} />
+	<style name="directive" fore={yellow} />
+	<style name="doublestring" fore={green} />
+	<style name="singlestring" fore={green} />
+	<style name="identifier2" />
+	<style name="attribute" />
+	<style name="identifier3" />
+	<style name="pseudoelement" />
+	<style name="extended_identifier" />
+	<style name="extended_pseudoclass" />
+	<style name="extended_pseudoelement" />
+	<style name="media" fore={yellow} />
+	<style name="variable" fore={blue} />
+	<style name="gdefault" fore={base02} />
+	<style name="linenumber" fore={base00} />
+	<style name="bracelight" fore={red} back={base02} bold="true" />
+	<style name="bracebad" />
+	<style name="controlchar" />
+	<style name="indentguide" fore={base02} />
+	<style name="lastpredefined" />
+</use-styles>
+<!-- COLORING_END -->

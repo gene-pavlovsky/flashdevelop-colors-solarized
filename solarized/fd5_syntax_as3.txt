@@ -1,0 +1,43 @@
+﻿editor styles
+	caret fore - caret color
+	caret line - caret line background
+	selection fore - selected text color
+	selection back - selected text background
+	margin fore - margin (code folding) background mix color 1
+	margin back - margin (code folding) background mix color 2
+	marker fore - code folding indicators fill color
+	marker back - code folding indicators line color
+	colorize-marker-back - set to true to colorize first margin column with 'gdefault' style foreground color
+
+styles
+	default - regular text
+	comment - /* */ comments
+	commentline - // comments
+	commentdoc - /** */ comments
+	commentlinedoc - /// comments
+	commentdockeyword - asdoc keywords in comments
+	commentdockeyworderror - invalid asdoc keywords in comments
+	number - numeric literals
+	string - string literals enclosed in double quotes ""
+	character - string literals enclosed in single quotes ''
+	uuid - ?
+	preprocessor - preprocessor directives starting with a hash #
+	operator - operators
+	identifier - identifier (variables, functions, classes)
+	stringeol - unterminated string literal (e.g. "missing closing quote)
+	verbatim - ?
+	regex - literal regular expressions
+	word - secondary keywords (true false NaN Infinity null undefined)
+	word2 - additional keywords (e.g. void arguments Array Boolean Class Error Function int Math Number Object Event Timer XMLNode)
+	word3 - additional keywords 3 (dynamic private public static intrinsic internal native override protected AS3 final)
+	word4 - additional keywords 4 (<!-- trace addEventListener removeEventListener hasListener addChild addChildAt removeChild removeChildAt -->)
+	word5 - additional keywords 5 (super this arguments)
+	globalclass - primary keywords (class extends implements import interface new case do while else if for in switch throw get set function var try catch finally while with default break continue delete return each const namespace package include use is as instanceof typeof)
+	gdefault fore - first margin column background color (if colorize-marker-back editor style is set to "true")
+	gdefault back - empty editor area background color
+	linenumber - margin (line numbers)
+	bracelight - matching braces highlighting
+	bracebad - ?
+	controlchar - ?
+	indentguide - indent guides
+	lastpredefined - ?
