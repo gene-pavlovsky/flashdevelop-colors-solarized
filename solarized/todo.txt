@@ -1,11 +1,16 @@
-﻿posted
-	combo boxes (main toolbar, bookmarks panel) flickering on mouse over, sometimes staying wrong color on mouse out
-	outline panel link colors
-	project panel icons seem to be darkened more than once
-	results/tasks panel filename color
-	debugger colors
-	scrollbar in Output panel not styled
-	quickfind bar "not found" background color -> if possible to change, set ToolStripTextBoxControl.ForeColor={base1}
-	quickfind highlight all background color (highlight-back editor style)
-	highlight matching words background color
-	completion tooltip, other tooltip param background color (also "Press F1 to toggle details" text color)
+﻿TODO
+	Try lighter SplitterControl color
+FlashDevelop bugs/feature requests
+	new
+		Horizontal line missing? on the bottom of all right-side dock panels
+	submitted
+		combo boxes (main toolbar, bookmarks panel) flickering on mouse over, sometimes staying wrong color on mouse out
+		outline panel link colors
+		project panel icons seem to be darkened more than once
+		results/tasks panel filename color
+		debugger colors
+		scrollbar in Output panel not styled
+		quickfind bar "not found" background color -> if possible to change, set ToolStripTextBoxControl.ForeColor={base1}
+		quickfind highlight all background color (highlight-back editor style)
+		highlight matching words background color
+		completion tooltip, other tooltip param background color (also "Press F1 to toggle details" text color)
