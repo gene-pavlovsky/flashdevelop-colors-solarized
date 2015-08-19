@@ -10,9 +10,9 @@
 	highlight-back - quickfind bar highlight all semi-transparent background (if "Highlight all" checkbox is ticked)
 	modifiedline-back - modified line margin background (if "Display > View Modified Lines" option is true)
 	colorize-marker-back - (true/false) colorize first margin column with 'gdefault' style foreground color
-	bookmarkline-back - ?
+	bookmarkline-back - bookmark line background (if "Display > View Bookmarks" option is true)
 	print-margin - print margin color (if "Editor > Print Margin Column" option is greater than 0)
-	error line - (debugger) breakpoint semi-transparent background, unless breakpoint is disabled
+	error line - (debugger) enabled breakpoint semi-transparent (if "Display > View Bookmarks" option is true, otherwise regular) background
 	debug line - (debugger) current line semi-transparent background
 	disabled line - (debugger) disabled breakpoint semi-transparent background
 
@@ -40,7 +40,7 @@ styles
 	word4 - additional keywords 4 (<!-- trace addEventListener removeEventListener hasListener addChild addChildAt removeChild removeChildAt -->)
 	word5 - additional keywords 5 (super this arguments)
 	globalclass - primary keywords (class extends implements import interface new case do while else if for in switch throw get set function var try catch finally while with default break continue delete return each const namespace package include use is as instanceof typeof)
-	gdefault fore - first margin column background (if colorize-marker-back editor style is set to "true")
+	gdefault fore - first margin column (bookmark and breakpoint indicators) background (if colorize-marker-back editor style is set to "true")
 	gdefault back - empty editor area background
 	linenumber - margin (line numbers)
 	bracelight - matching braces highlighting

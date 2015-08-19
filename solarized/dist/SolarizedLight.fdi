@@ -27,7 +27,7 @@ ScrollBar.BorderColor=0xeee8d5
 ScrollBar.ActiveForeColor=0x073642
 ScrollBar.DisabledBackColor=0xeee8d5
 ScrollBar.DisabledBorderColor=0xeee8d5
-ScrollBar.CurrentPositionColor=0xb58900
+ScrollBar.CurrentPositionColor=0xffbf00
 
 LinkLabel.LinkColor=0xdc322f
 LinkLabel.ActiveLinkColor=0xcb4b16
@@ -132,9 +132,9 @@ Panel.BackColor=0xfdf6e3
 QuickFind.ForeColor=0x073642
 QuickFind.BackColor=0xeee8d5
 
-SplitterControl.BackColor=0x657b83
-SplitContainer.BackColor=0x657b83
-SplitterPanel.BackColor=0x657b83
+SplitterControl.BackColor=0xeee8d5
+SplitContainer.BackColor=0xeee8d5
+SplitterPanel.BackColor=0xeee8d5
 
 LinkLabel.ForeColor=0x073642
 LinkLabel.BackColor=0xfdf6e3
@@ -168,7 +168,7 @@ ToolStripTextBoxControl.BackColor=0xfdf6e3
 
 DockPanel.BackColor=0x839496
 
-AutoHideWindowControl.BackColor=0x586e75
+AutoHideWindowControl.BackColor=0x839496
 
 VS2005DockPaneCaption.ForeColor=0x002b36
 VS2005DockPaneCaption.BackColor=0x839496

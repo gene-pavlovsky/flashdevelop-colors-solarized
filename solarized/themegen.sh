@@ -1,7 +1,7 @@
 #!/bin/sh
-SUB="./solarized_sub.sh"
-DARK_OPTIONS=""
-LIGHT_OPTIONS="-l -H"
+
+SOLARIZE_DARK="./solarize.sh"
+SOLARIZE_LIGHT="./solarize.sh -l -H"
 
 ZIP="7z a -tzip"
 BASE_DIR="\$(BaseDir)"
@@ -14,21 +14,17 @@ echo "Syntax:"
 for file in templates/*.xml*; do
 	outfile=${file:10}
 	echo "  $outfile"
-  "$SUB" $DARK_OPTIONS "$file" >dark/"$outfile"
-  "$SUB" $LIGHT_OPTIONS "$file" >light/"$outfile"
+  sed -f templates/syntax-common.sed -f templates/syntax-dark.sed "$file" | $SOLARIZE_DARK - >dark/"$outfile"
+  sed -f templates/syntax-common.sed -f templates/syntax-light.sed "$file" | $SOLARIZE_LIGHT - >light/"$outfile"
 done
 echo
 
 echo "Themes:"
 echo "  SolarizedDark.fdi"
-sed -e 's,{solarized},SolarizedDark,' \
-		-e 's,{image_set},Darker,' \
-		templates/Solarized.fdi | "$SUB" $DARK_OPTIONS -n - >dist/SolarizedDark.fdi
+sed -f templates/theme-common.sed -f templates/theme-dark.sed templates/Solarized.fdi | $SOLARIZE_DARK -n - >dist/SolarizedDark.fdi
 
 echo "  SolarizedLight.fdi"
-sed -e 's,{solarized},SolarizedLight,' \
-		-e 's,{image_set},Default,' \
-		templates/Solarized.fdi | "$SUB" $LIGHT_OPTIONS -n - >dist/SolarizedLight.fdi
+sed -f templates/theme-common.sed -f templates/theme-light.sed templates/Solarized.fdi | $SOLARIZE_LIGHT -n - >dist/SolarizedLight.fdi
 
 echo
 echo "Packaging themes:"

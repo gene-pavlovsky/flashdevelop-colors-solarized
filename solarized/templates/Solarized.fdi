@@ -1,4 +1,4 @@
-### {solarized}.fdi
+### {theme-name}.fdi
 
 # FD UI THEME (5.0+)
 
@@ -6,7 +6,7 @@
 #ThemeManager.UseInheritance=True
 
 # Bright, Default, Dim, Dark, Darker, Black
-ImageManager.ImageSet={image_set}
+ImageManager.ImageSet={image-set}
 
 # Default, Large
 VS2005DockPaneStrip.TabSize=Large
@@ -27,7 +27,7 @@ ScrollBar.BorderColor={base02}
 ScrollBar.ActiveForeColor={base1}
 ScrollBar.DisabledBackColor={base02}
 ScrollBar.DisabledBorderColor={base02}
-ScrollBar.CurrentPositionColor={yellow}
+ScrollBar.CurrentPositionColor={scrollbar-current-pos}
 
 LinkLabel.LinkColor={red}
 LinkLabel.ActiveLinkColor={orange}
@@ -132,9 +132,9 @@ Panel.BackColor={base03}
 QuickFind.ForeColor={base1}
 QuickFind.BackColor={base02}
 
-SplitterControl.BackColor={base00}
-SplitContainer.BackColor={base00}
-SplitterPanel.BackColor={base00}
+SplitterControl.BackColor={base02}
+SplitContainer.BackColor={base02}
+SplitterPanel.BackColor={base02}
 
 LinkLabel.ForeColor={base1}
 LinkLabel.BackColor={base03}
@@ -168,7 +168,7 @@ ToolStripTextBoxControl.BackColor={base03}
 
 DockPanel.BackColor={base01}
 
-AutoHideWindowControl.BackColor={base0}
+AutoHideWindowControl.BackColor={base01}
 
 VS2005DockPaneCaption.ForeColor={base2}
 VS2005DockPaneCaption.BackColor={base01}

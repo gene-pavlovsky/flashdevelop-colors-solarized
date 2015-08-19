@@ -132,9 +132,9 @@ Panel.BackColor=0x002b36
 QuickFind.ForeColor=0x93a1a1
 QuickFind.BackColor=0x073642
 
-SplitterControl.BackColor=0x657b83
-SplitContainer.BackColor=0x657b83
-SplitterPanel.BackColor=0x657b83
+SplitterControl.BackColor=0x073642
+SplitContainer.BackColor=0x073642
+SplitterPanel.BackColor=0x073642
 
 LinkLabel.ForeColor=0x93a1a1
 LinkLabel.BackColor=0x002b36
@@ -168,7 +168,7 @@ ToolStripTextBoxControl.BackColor=0x002b36
 
 DockPanel.BackColor=0x586e75
 
-AutoHideWindowControl.BackColor=0x839496
+AutoHideWindowControl.BackColor=0x586e75
 
 VS2005DockPaneCaption.ForeColor=0xeee8d5
 VS2005DockPaneCaption.BackColor=0x586e75

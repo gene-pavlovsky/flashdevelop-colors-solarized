@@ -1,16 +1,16 @@
 <!-- COLORING_START -->
-<editor-style caret-fore={base2} caretline-back={base02} selection-fore={base2} selection-back={base01} margin-fore={base03} margin-back={base03} marker-fore={base03} marker-back={base01} highlight-back={green-hi} modifiedline-back={yellow} colorize-marker-back="true" />
+<editor-style caret-fore={caret-fore} caretline-back={caretline-back} selection-fore={selection-fore} selection-back={selection-back} margin-fore={margin-fore} margin-back={margin-back} marker-fore={marker-fore} marker-back={marker-back} highlight-back={highlight-back} modifiedline-back={modifiedline-back} bookmarkline-back={bookmarkline-back} colorize-marker-back="true" />
 <use-styles>
-	<style name="default" fore={base1} back={base03} size="11" font="Consolas" />
+	<style name="default" fore={default-fore} back={default-back} size={font-size} font={font-face} />
 	<style name="tag" fore={yellow} />
 	<style name="tagunknown" fore={red} />
 	<style name="attribute" fore={base1} />
 	<style name="attributeunknown" fore={base1} />
-	<style name="number" fore={blue} />
+	<style name="number" fore={xml-number-fore} />
 	<style name="doublestring" fore={green} />
 	<style name="singlestring" fore={green} />
 	<style name="other" fore={yellow} />
-	<style name="comment" fore={base01} />
+	<style name="comment" fore={comment-fore} />
 	<style name="entity" fore={orange} />
 	<style name="tagend" fore={yellow} />
 	<style name="xmlstart" fore={yellow} />
@@ -45,7 +45,7 @@
 	<style name="j_singlestring" fore={green} />
 	<style name="j_symbols" fore={yellow} />
 	<style name="j_stringeol" />
-	<style name="j_regex" fore={magenta} />
+	<style name="j_regex" fore={regex-fore} />
 	<style name="ja_start" />
 	<style name="ja_default" />
 	<style name="ja_comment" />
@@ -112,12 +112,12 @@
 	<style name="php_commentline" fore={base01} />
 	<style name="php_hstring_variable" />
 	<style name="php_operator" fore={blue} />
-	<style name="gdefault" fore={base02} />
-	<style name="linenumber" fore={base00} />
-	<style name="bracelight" fore={red} back={base02} bold="true" />
+	<style name="gdefault" fore={gdefault-fore} />
+	<style name="linenumber" fore={linenumber-fore} />
+	<style name="bracelight" fore={bracelight-fore} back={bracelight-back} bold="true" />
 	<style name="bracebad" />
 	<style name="controlchar" bold="true" />
-	<style name="indentguide" fore={base02} />
+	<style name="indentguide" fore={indentguide-fore} />
 	<style name="lastpredefined" />
 </use-styles>
 <!-- COLORING_END -->

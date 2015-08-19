@@ -1,35 +1,35 @@
 <!-- COLORING_START -->
-<editor-style caret-fore={base2} caretline-back={base02} selection-fore={base2} selection-back={base01} margin-fore={base03} margin-back={base03} marker-fore={base03} marker-back={base01} highlight-back={green-hi} modifiedline-back={yellow} colorize-marker-back="true" />
+<editor-style caret-fore={caret-fore} caretline-back={caretline-back} selection-fore={selection-fore} selection-back={selection-back} margin-fore={margin-fore} margin-back={margin-back} marker-fore={marker-fore} marker-back={marker-back} highlight-back={highlight-back} modifiedline-back={modifiedline-back} bookmarkline-back={bookmarkline-back} colorize-marker-back="true" />
 <use-styles>
-	<style name="default" fore={base1} back={base03} size="11" font="Consolas" />
-	<style name="comment" fore={base01} />
-	<style name="commentline" fore={base01} />
-	<style name="commentdoc" fore={base00} />
-	<style name="number" fore={cyan} />
-	<style name="word" fore={violet} />
-	<style name="string" fore={green} />
-	<style name="character" fore={green} />
-	<style name="uuid" back={yellow} fore={base0} bold="true" />
-	<style name="preprocessor" fore={orange} />
-	<style name="operator" fore={yellow} />
+	<style name="default" fore={default-fore} back={default-back} size={font-size} font={font-face} />
+	<style name="comment" fore={comment-fore} />
+	<style name="commentline" fore={comment-fore} />
+	<style name="commentdoc" fore={commentdoc-fore} />
+	<style name="number" fore={number-fore} />
+	<style name="word" fore={word-fore} />
+	<style name="string" fore={string-fore} />
+	<style name="character" fore={string-fore} />
+	<style name="uuid" fore={uuid-fore} back={uuid-back} bold="true" />
+	<style name="preprocessor" fore={preprocessor-fore} />
+	<style name="operator" fore={operator-fore} />
 	<style name="identifier" />
 	<style name="stringeol" />
-	<style name="verbatim" back={green} fore={base0} bold="true" />
-	<style name="regex" fore={magenta} />
-	<style name="commentlinedoc" fore={base00} />
-	<style name="word2" fore={blue} />
-	<style name="word3" fore={orange} />
-	<style name="word4" />
-	<style name="word5" fore={blue} />
-	<style name="commentdockeyword" fore={base0} />
-	<style name="commentdockeyworderror" fore={base0} back={red} />
-	<style name="globalclass" fore={yellow} />
-	<style name="gdefault" fore={base02} />
-	<style name="linenumber" fore={base00} />
-	<style name="bracelight" fore={red} back={base02} bold="true" />
-	<style name="bracebad" back={red} fore={base0} bold="true" />
+	<style name="verbatim" fore={verbatim-fore} back={verbatim-back} bold="true" />
+	<style name="regex" fore={regex-fore} />
+	<style name="commentlinedoc" fore={commentdoc-fore} />
+	<style name="word2" fore={word2-fore} />
+	<style name="word3" fore={word3-fore} />
+	<style name="word4" fore={word4-fore} />
+	<style name="word5" fore={word5-fore} />
+	<style name="commentdockeyword" fore={commentdockeyword-fore} />
+	<style name="commentdockeyworderror" fore={commentdockeyword-fore} back={commentdockeyworderror-back} />
+	<style name="globalclass" fore={globalclass-fore} />
+	<style name="gdefault" fore={gdefault-fore} />
+	<style name="linenumber" fore={linenumber-fore} />
+	<style name="bracelight" fore={bracelight-fore} back={bracelight-back} bold="true" />
+	<style name="bracebad" fore={bracebad-fore} back={bracebad-back} bold="true" />
 	<style name="controlchar" bold="true" />
-	<style name="indentguide" fore={base02} />
-	<style name="lastpredefined" back={violet} fore={base0} bold="true" />
+	<style name="indentguide" fore={indentguide-fore} />
+	<style name="lastpredefined" fore={lastpredefined-fore} back={lastpredefined-back} bold="true" />
 </use-styles>
 <!-- COLORING_END -->

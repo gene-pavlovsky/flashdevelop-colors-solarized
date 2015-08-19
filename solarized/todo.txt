@@ -1,8 +1,7 @@
-﻿TODO
-	Try lighter SplitterControl color
-FlashDevelop bugs/feature requests
+﻿FlashDevelop bugs/feature requests
 	new
 		Horizontal line missing? on the bottom of all right-side dock panels
+		feature request - bookmarkline-back - apply semi-transparent if view bookmarks is true (same as breakpoints) 
 	submitted
 		combo boxes (main toolbar, bookmarks panel) flickering on mouse over, sometimes staying wrong color on mouse out
 		outline panel link colors

@@ -48,7 +48,7 @@ test "$filename" && exec <"$filename"
 
 declare -A colors
 while read name tmp color; do
-	colors[$name]=$color
+	test "$name" -a "${name:0:1}" != "#" -a "$tmp" = "=" -a "$color" &&	colors[$name]=$color
 done <"$SOLARIZED_COLORS"
 
 swap() {

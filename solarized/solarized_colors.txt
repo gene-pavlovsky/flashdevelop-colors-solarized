@@ -1,3 +1,4 @@
+# Base colors
 base03      = 0x002b36
 base02      = 0x073642
 base01      = 0x586e75
@@ -6,19 +7,23 @@ base0       = 0x839496
 base1       = 0x93a1a1
 base2       = 0xeee8d5
 base3       = 0xfdf6e3
+
+# Accent colors
 yellow      = 0xb58900
-yellow-hi   = 0xffbf00
 orange      = 0xcb4b16
-orange-hi   = 0xff601c
 red         = 0xdc322f
-red-hi      = 0xff3936
 magenta     = 0xd33682
-magenta-hi  = 0xff429d
 violet      = 0x6c71c4
-violet-hi   = 0x8c92ff
 blue        = 0x268bd2
-blue-hi     = 0x2ea8ff
 cyan        = 0x2aa198
-cyan-hi     = 0x42ffef
 green       = 0x859900
+
+# Accent colors (high brightness)
+yellow-hi   = 0xffbf00
+orange-hi   = 0xff601c
+red-hi      = 0xff3936
+magenta-hi  = 0xff429d
+violet-hi   = 0x8c92ff
+blue-hi     = 0x2ea8ff
+cyan-hi     = 0x42ffef
 green-hi    = 0xddff00
