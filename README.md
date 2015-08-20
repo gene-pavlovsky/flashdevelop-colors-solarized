@@ -8,9 +8,10 @@ A [Solarized](http://ethanschoonover.com/solarized) theme and syntax colorscheme
 Screenshots
 -----------
 
-![solarized](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/solarized/image/fd_solarized.jpg)
-![solarized-dark](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/solarized/image/fd_solarized_dark.jpg)
-![solarized-light](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/solarized/image/fd_solarized_light.jpg)
+![solarized dark](https://github.com/altercation/solarized/raw/master/img/solarized-vim.png)
+![solarized](https://raw.githubusercontent.com/gene-pavlovsky/flashdevelop-colors-solarized/master/image/fd_solarized.jpg)
+![solarized-dark](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/image/fd_solarized_dark.jpg)
+![solarized-light](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/image/fd_solarized_light.jpg)
 
 Downloads
 ------------
