@@ -16,12 +16,12 @@ Screenshots
 
 Downloads
 ------------
-[SolarizedDark-FullTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/dist/FullThemes/SolarizedDark.fdz?raw=true) includes both UI theme and syntax colorscheme.  
-[SolarizedLight-FullTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/dist/FullThemes/SolarizedLight.fdz?raw=true) includes both UI theme and syntax colorscheme.  
-[SolarizedDark-SyntaxTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/dist/SyntaxThemes/SolarizedDark.fdz?raw=true)  
-[SolarizedLight-SyntaxTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/dist/SyntaxThemes/SolarizedLight.fdz?raw=true)  
-[SolarizedDark-UITheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/dist/SolarizedDark.fdz?raw=true)  
-[SolarizedLight-UITheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/tree/master/dist/SolarizedLight.fdz?raw=true)  
+[SolarizedDark-FullTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/FullThemes/SolarizedDark.fdz?raw=true) includes both UI theme and syntax colorscheme.  
+[SolarizedLight-FullTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/FullThemes/SolarizedLight.fdz?raw=true) includes both UI theme and syntax colorscheme.  
+[SolarizedDark-SyntaxTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SyntaxThemes/SolarizedDark.fdz?raw=true)  
+[SolarizedLight-SyntaxTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SyntaxThemes/SolarizedLight.fdz?raw=true)  
+[SolarizedDark-UITheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SolarizedDark.fdi?raw=true)  
+[SolarizedLight-UITheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SolarizedLight.fdi?raw=true)  
 [Complete ZIP](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/archive/master.zip)
 
 Installation
