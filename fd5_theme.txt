@@ -1,4 +1,49 @@
-﻿# ImageManager.ImageSet: Bright, Default, Dim, Dark, Darker, Black
+﻿# FD UI THEME (5.1+)
+
+# In: Projects, Results, Outline, Models, Logs
+# Highlighted item text (e.g. current item in the Results panel, when using F12 to navigate through Results), or background (e.g. matching items when doing a search in the Outline panel)
+Global.Highlight=0x268bd2
+# Highlighted item text (e.g. matching items when doing a search in the Outline panel)
+Global.HighlightText=0xeee8d5
+Global.ControlText=0xddff00
+# Quick search field search invitation text (e.g. "Search..." in the Outline panel)
+Global.GrayText=0x586e75
+
+# Output panel info text (e.g. compile status)
+OutputPanel.InfoColor=0x657b83
+# Output panel debug text (e.g. app traces)
+OutputPanel.DebugColor=0x93a1a1a
+# Output panel compiler warning text
+OutputPanel.WarningColor=0xff601c
+# Output panel compiler error text (including warning and error lines)
+OutputPanel.ErrorColor=0xff3936
+# Output panel fatal text (???)
+OutputPanel.FatalColor=0xff429d
+# Output panel FD process start text (e.g. fdbuild start)
+OutputPanel.ProcessStartColor=0x268bd2
+# Output panel FD process end text (e.g. fdbuild complete)
+OutputPanel.ProcessEndColor=0x268bd2
+
+# Quick find bar background color if there are no matches found
+QuickFind.ErrorBack=0x6c71c4
+# Completion list selected line text
+CompletionList.SelectedTextColor=0xeee8d5
+# Completion list selected line background
+#CompletionList.SelectedBackColor=0x073642
+CompletionList.SelectedBackColor=0x268bd2
+# Completion list package text
+CompletionList.PackageColor=0x657b83
+# Method call tip selected parameter background
+#MethodCallTip.SelectedBack=0x073642
+MethodCallTip.SelectedBack=0x268bd2
+# Method call tip additional info text
+MethodCallTip.InfoColor=0x657b83
+# FD UI THEME (5.0+)
+
+# When applying theme colors to a control based on type, whether to apply colors of control's base type before applying for it's own type.
+#ThemeManager.UseInheritance=True
+
+# ImageManager.ImageSet: Bright, Default, Dim, Dark, Darker, Black
 ImageManager.ImageSet=Darker - image filter applied to toolbar and project panel icons
 
 # VS2005DockPaneStrip.TabSize: Default, Large

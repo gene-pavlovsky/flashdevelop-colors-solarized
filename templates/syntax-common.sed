@@ -11,6 +11,7 @@ s,{margin-back},{base03},g
 s,{marker-fore},{base03},g
 s,{marker-back},{base01},g
 s,{highlight-back},{green-hi},g
+s,{highlightword-back},{cyan-med},g
 s,{modifiedline-back},{yellow},g
 
 s,{font-size},"11",g;
@@ -25,13 +26,10 @@ s,{commentdockeyworderror-back},{red},g
 
 s,{number-fore},{cyan},g
 s,{xml-number-fore},{blue},g
+s,{character-fore},{green},g
 s,{string-fore},{green},g
-# ?
-s,{verbatim-fore},{base0},g
-s,{verbatim-back},{green},g
-# ?
-s,{uuid-fore},{base0},g
-s,{uuid-back},{yellow},g
+s,{verbatim-fore},{green},g
+s,{stringeol-fore},{green},g
 s,{preprocessor-fore},{orange},g
 s,{regex-fore},{magenta},g
 
@@ -42,7 +40,6 @@ s,{word-fore},{violet},g
 s,{python-word-fore},{yellow},g
 s,{word2-fore},{blue},g
 s,{word3-fore},{orange},g
-s, *[-a-z0-9]*={word4-fore} *, ,g
 s,{word5-fore},{blue},g
 s,{globalclass-fore},{yellow},g
 
@@ -51,12 +48,8 @@ s,{linenumber-fore},{base00},g
 
 s,{bracelight-fore},{red},g
 s,{bracelight-back},{base02},g
-# ?
-s,{bracebad-fore},{base0},g
-s,{bracebad-back},{red},g
 
 s,{indentguide-fore},{base02},g
 
-# ?
-s,{lastpredefined-fore},{base0},g
-s,{lastpredefined-back},{violet},g
+s,[a-z][-_a-z0-9]*={\(word4\|bracebad\)-[a-z]*},,g
+s/ \{2,\}/ /g

@@ -1,5 +1,5 @@
 <!-- COLORING_START -->
-<editor-style caret-fore={caret-fore} caretline-back={caretline-back} selection-fore={selection-fore} selection-back={selection-back} margin-fore={margin-fore} margin-back={margin-back} marker-fore={marker-fore} marker-back={marker-back} highlight-back={highlight-back} modifiedline-back={modifiedline-back} bookmarkline-back={bookmarkline-back} colorize-marker-back="true" />
+<editor-style caret-fore={caret-fore} caretline-back={caretline-back} selection-fore={selection-fore} selection-back={selection-back} margin-fore={margin-fore} margin-back={margin-back} marker-fore={marker-fore} marker-back={marker-back} highlight-back={highlight-back} highlightword-back={highlightword-back} modifiedline-back={modifiedline-back} bookmarkline-back={bookmarkline-back} colorize-marker-back="true" />
 <use-styles>
 	<style name="default" fore={default-fore} back={default-back} size={font-size} font={font-face} />
 	<style name="comment" fore={comment-fore} />
@@ -8,13 +8,12 @@
 	<style name="number" fore={number-fore} />
 	<style name="word" fore={word-fore} />
 	<style name="string" fore={string-fore} />
-	<style name="character" fore={string-fore} />
-	<style name="uuid" />
+	<style name="character" fore={character-fore} />
 	<style name="preprocessor" fore={preprocessor-fore} />
 	<style name="operator" fore={operator-fore} />
 	<style name="identifier" />
-	<style name="stringeol" />
-	<style name="verbatim" />
+	<style name="stringeol" fore={stringeol-fore} />
+	<style name="verbatim" fore={verbatim-fore} />
 	<style name="regex" fore={regex-fore} />
 	<style name="commentlinedoc" fore={commentdoc-fore} />
 	<style name="word2" fore={word2-fore} />
@@ -30,6 +29,5 @@
 	<style name="bracebad" />
 	<style name="controlchar" bold="true" />
 	<style name="indentguide" fore={indentguide-fore} />
-	<style name="lastpredefined" />
 </use-styles>
 <!-- COLORING_END -->
