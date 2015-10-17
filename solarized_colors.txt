@@ -18,6 +18,16 @@ blue        = 0x268bd2
 cyan        = 0x2aa198
 green       = 0x859900
 
+# Accent colors (medium-high brightness)
+yellow-med  = 0xdba400
+orange-med  = 0xe55719
+red-med     = 0xed3532
+magenta-med = 0xeb3d91
+violet-med  = 0x7d82e3
+blue-med    = 0x2a99e8
+cyan-med    = 0x36d1c4
+green-med   = 0xb1cc00
+
 # Accent colors (high brightness)
 yellow-hi   = 0xffbf00
 orange-hi   = 0xff601c

@@ -1,5 +1,5 @@
 <!-- COLORING_START -->
-<editor-style caret-fore={caret-fore} caretline-back={caretline-back} selection-fore={selection-fore} selection-back={selection-back} margin-fore={margin-fore} margin-back={margin-back} marker-fore={marker-fore} marker-back={marker-back} highlight-back={highlight-back} modifiedline-back={modifiedline-back} bookmarkline-back={bookmarkline-back} colorize-marker-back="true" />
+<editor-style caret-fore={caret-fore} caretline-back={caretline-back} selection-fore={selection-fore} selection-back={selection-back} margin-fore={margin-fore} margin-back={margin-back} marker-fore={marker-fore} marker-back={marker-back} highlight-back={highlight-back} highlightword-back={highlightword-back} modifiedline-back={modifiedline-back} bookmarkline-back={bookmarkline-back} colorize-marker-back="true" />
 <use-styles>
 	<style name="default" fore={default-fore} back={default-back} size={font-size} font={font-face} />
 	<style name="comment" fore={comment-fore} />
@@ -13,6 +13,5 @@
 	<style name="bracebad" />
 	<style name="controlchar" bold="true" />
 	<style name="indentguide" fore={indentguide-fore} />
-	<style name="lastpredefined" />
 </use-styles>
 <!-- COLORING_END -->

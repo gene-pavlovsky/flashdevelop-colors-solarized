@@ -1,15 +1,17 @@
 ﻿FlashDevelop bugs/feature requests
 	new
-		Horizontal line missing? on the bottom of all right-side dock panels
-		feature request - bookmarkline-back - apply semi-transparent if view bookmarks is true (same as breakpoints) 
-	submitted
+	submitted to FD team
+		horizontal line missing? on the bottom of all right-side dock panels
+		bookmarkline-back - apply semi-transparent if view bookmarks is true (same as breakpoints) 
 		combo boxes (main toolbar, bookmarks panel) flickering on mouse over, sometimes staying wrong color on mouse out
-		outline panel link colors
-		project panel icons seem to be darkened more than once
-		results/tasks panel filename color
 		debugger colors
 		scrollbar in Output panel not styled
-		quickfind bar "not found" background color -> if possible to change, set ToolStripTextBoxControl.ForeColor={base1}
+		completion tooltip, other tooltip param background color (also "Press F1 to toggle details" text color)
+		results/tasks panel filename color (list view grouping header)
+	implemented by FD team
+		outline panel link colors
+		project panel icons seem to be darkened more than once
+		quickfind bar "not found" background color
 		quickfind highlight all background color (highlight-back editor style)
 		highlight matching words background color
-		completion tooltip, other tooltip param background color (also "Press F1 to toggle details" text color)
+	rejected by FD team (won't implement)

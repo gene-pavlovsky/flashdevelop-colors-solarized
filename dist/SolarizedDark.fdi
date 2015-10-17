@@ -1,8 +1,30 @@
 ### SolarizedDark.fdi
 
+# FD UI THEME (5.1+)
+
+# In: Projects, Results, Outline, Models, Logs
+Global.Highlight=0x268bd2
+Global.HighlightText=0xeee8d5
+Global.ControlText=0xeee8d5
+Global.GrayText=0x586e75
+
+OutputPanel.InfoColor=0x657b83
+OutputPanel.DebugColor=0x93a1a1
+OutputPanel.WarningColor=0xff601c
+OutputPanel.ErrorColor=0xff3936
+OutputPanel.FatalColor=0xff429d
+OutputPanel.ProcessStartColor=0x268bd2
+OutputPanel.ProcessEndColor=0x268bd2
+
+QuickFind.ErrorBack=0x6c71c4
+CompletionList.SelectedTextColor=0xeee8d5
+CompletionList.SelectedBackColor=0x268bd2
+CompletionList.PackageColor=0x657b83
+MethodCallTip.SelectedBack=0x268bd2
+MethodCallTip.InfoColor=0x657b83
+
 # FD UI THEME (5.0+)
 
-# Use inherited base styles?
 #ThemeManager.UseInheritance=True
 
 # Bright, Default, Dim, Dark, Darker, Black
@@ -77,7 +99,7 @@ ProjectTreeView.LibraryTextColor=0x268bd2
 ProjectTreeView.ExternalLibraryTextColor=0x859900
 ProjectTreeView.IncludedLibraryTextColor=0x2aa198
 
-# FD UI THEME (4.3+) 
+# FD UI THEME (4.3+)
 
 ### EDIT CONTROLS
 
@@ -168,6 +190,7 @@ ToolStripTextBoxControl.BackColor=0x002b36
 
 DockPanel.BackColor=0x586e75
 
+#AutoHideWindowControl.ForeColor=#FF0000 ???
 AutoHideWindowControl.BackColor=0x586e75
 
 VS2005DockPaneCaption.ForeColor=0xeee8d5
