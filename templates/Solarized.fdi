@@ -2,11 +2,14 @@
 
 # FD UI THEME (5.1+)
 
-# In: Projects, Results, Outline, Models, Logs
-Global.Highlight={blue}
-Global.HighlightText={base2}
-Global.ControlText={base2}
-Global.GrayText={base01}
+ListView.Highlight={blue}
+ListView.HighlightText={base2}
+TreeView.Highlight={blue}
+TreeView.HighlightText={base2}
+
+FlashLogViewer.DebugColor={base1}
+FlashLogViewer.WarningColor={orange-hi}
+FlashLogViewer.ErrorColor={red-hi}
 
 OutputPanel.InfoColor={base00}
 OutputPanel.DebugColor={base1}
@@ -15,8 +18,10 @@ OutputPanel.ErrorColor={red-hi}
 OutputPanel.FatalColor={magenta-hi}
 OutputPanel.ProcessStartColor={blue}
 OutputPanel.ProcessEndColor={blue}
+OutputPanel.HighlightColor={base2}
 
-QuickFind.ErrorBack={violet}
+QuickFind.ErrorBack={blue}
+ToolStripTextBoxControl.GrayText={base01}
 CompletionList.SelectedTextColor={base2}
 CompletionList.SelectedBackColor={blue}
 CompletionList.PackageColor={base00}
@@ -51,9 +56,9 @@ ScrollBar.DisabledBackColor={base02}
 ScrollBar.DisabledBorderColor={base02}
 ScrollBar.CurrentPositionColor={scrollbar-current-pos}
 
-LinkLabel.LinkColor={red}
-LinkLabel.ActiveLinkColor={orange}
-LinkLabel.DisabledLinkColor={cyan}
+LinkLabel.LinkColor={blue}
+LinkLabel.ActiveLinkColor={red}
+LinkLabel.DisabledLinkColor={violet}
 
 ColumnHeader.BackColor={base02}
 ColumnHeader.TextColor={base2}
@@ -79,8 +84,8 @@ VS2005DockPaneCaption.BorderColor={base1}
 VS2005DockPaneStrip.DocTabActiveBorder={base01}
 VS2005DockPaneStrip.DocTabActiveForeColor={blue}
 VS2005DockPaneStrip.DocTabInactiveBorder={base03}
-VS2005DockPaneStrip.ToolActiveBorderColor={base2}
-VS2005DockPaneStrip.ToolBorderColor={base1}
+VS2005DockPaneStrip.ToolActiveBorderColor={base1}
+VS2005DockPaneStrip.ToolBorderColor={base03} # unused
 VS2005DockPaneStrip.ToolActiveForeColor={base2}
 VS2005DockPaneStrip.ToolSeparatorColor={base03}
 VS2005DockPaneStrip.ImageColor={base1}
@@ -143,8 +148,8 @@ RichToolTip.BackColor={base03}
 CompletionList.ForeColor={base1}
 CompletionList.BackColor={base03}
 
-MessageBar.ForeColor={base1}
-MessageBar.BackColor={base03}
+MessageBar.ForeColor={base2}
+MessageBar.BackColor={blue}
 
 Panel.ForeColor={base1}
 Panel.BackColor={base03}
@@ -210,4 +215,4 @@ VS2005DockPaneStrip.TabStripColor={base02}
 
 VS2005AutoHideStrip.ForeColor={base1}
 VS2005AutoHideStrip.BackColor={base03}
-VS2005AutoHideStrip.BorderColor={base03}
+VS2005AutoHideStrip.BorderColor={base01}

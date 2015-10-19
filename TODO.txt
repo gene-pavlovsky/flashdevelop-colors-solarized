@@ -1,5 +1,6 @@
 ﻿FlashDevelop bugs/feature requests
 	new
+		should flash log viewer support exceptions' "Error: " matching?
 	submitted to FD team
 		horizontal line missing? on the bottom of all right-side dock panels
 		bookmarkline-back - apply semi-transparent if view bookmarks is true (same as breakpoints) 

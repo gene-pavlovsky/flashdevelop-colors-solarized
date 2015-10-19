@@ -2,11 +2,14 @@
 
 # FD UI THEME (5.1+)
 
-# In: Projects, Results, Outline, Models, Logs
-Global.Highlight=0x268bd2
-Global.HighlightText=0x002b36
-Global.ControlText=0x002b36
-Global.GrayText=0x839496
+ListView.Highlight=0x268bd2
+ListView.HighlightText=0x002b36
+TreeView.Highlight=0x268bd2
+TreeView.HighlightText=0x002b36
+
+FlashLogViewer.DebugColor=0x073642
+FlashLogViewer.WarningColor=0xff601c
+FlashLogViewer.ErrorColor=0xff3936
 
 OutputPanel.InfoColor=0x657b83
 OutputPanel.DebugColor=0x073642
@@ -15,8 +18,10 @@ OutputPanel.ErrorColor=0xff3936
 OutputPanel.FatalColor=0xff429d
 OutputPanel.ProcessStartColor=0x268bd2
 OutputPanel.ProcessEndColor=0x268bd2
+OutputPanel.HighlightColor=0x002b36
 
-QuickFind.ErrorBack=0x6c71c4
+QuickFind.ErrorBack=0x268bd2
+ToolStripTextBoxControl.GrayText=0x839496
 CompletionList.SelectedTextColor=0x002b36
 CompletionList.SelectedBackColor=0x268bd2
 CompletionList.PackageColor=0x657b83
@@ -51,9 +56,9 @@ ScrollBar.DisabledBackColor=0xeee8d5
 ScrollBar.DisabledBorderColor=0xeee8d5
 ScrollBar.CurrentPositionColor=0xffbf00
 
-LinkLabel.LinkColor=0xdc322f
-LinkLabel.ActiveLinkColor=0xcb4b16
-LinkLabel.DisabledLinkColor=0x2aa198
+LinkLabel.LinkColor=0x268bd2
+LinkLabel.ActiveLinkColor=0xdc322f
+LinkLabel.DisabledLinkColor=0x6c71c4
 
 ColumnHeader.BackColor=0xeee8d5
 ColumnHeader.TextColor=0x002b36
@@ -79,8 +84,8 @@ VS2005DockPaneCaption.BorderColor=0x073642
 VS2005DockPaneStrip.DocTabActiveBorder=0x839496
 VS2005DockPaneStrip.DocTabActiveForeColor=0x268bd2
 VS2005DockPaneStrip.DocTabInactiveBorder=0xfdf6e3
-VS2005DockPaneStrip.ToolActiveBorderColor=0x002b36
-VS2005DockPaneStrip.ToolBorderColor=0x073642
+VS2005DockPaneStrip.ToolActiveBorderColor=0x073642
+VS2005DockPaneStrip.ToolBorderColor=0xfdf6e3 # unused
 VS2005DockPaneStrip.ToolActiveForeColor=0x002b36
 VS2005DockPaneStrip.ToolSeparatorColor=0xfdf6e3
 VS2005DockPaneStrip.ImageColor=0x073642
@@ -143,8 +148,8 @@ RichToolTip.BackColor=0xfdf6e3
 CompletionList.ForeColor=0x073642
 CompletionList.BackColor=0xfdf6e3
 
-MessageBar.ForeColor=0x073642
-MessageBar.BackColor=0xfdf6e3
+MessageBar.ForeColor=0x002b36
+MessageBar.BackColor=0x268bd2
 
 Panel.ForeColor=0x073642
 Panel.BackColor=0xfdf6e3
@@ -210,4 +215,4 @@ VS2005DockPaneStrip.TabStripColor=0xeee8d5
 
 VS2005AutoHideStrip.ForeColor=0x073642
 VS2005AutoHideStrip.BackColor=0xfdf6e3
-VS2005AutoHideStrip.BorderColor=0xfdf6e3
+VS2005AutoHideStrip.BorderColor=0x839496
