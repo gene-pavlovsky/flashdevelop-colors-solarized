@@ -8,25 +8,36 @@ TreeView.Highlight={blue}
 TreeView.HighlightText={base2}
 
 FlashLogViewer.DebugColor={base1}
-FlashLogViewer.WarningColor={orange-hi}
-FlashLogViewer.ErrorColor={red-hi}
+FlashLogViewer.WarningColor={orange-max}
+FlashLogViewer.ErrorColor={red-max}
 
 OutputPanel.InfoColor={base00}
 OutputPanel.DebugColor={base1}
-OutputPanel.WarningColor={orange-hi}
-OutputPanel.ErrorColor={red-hi}
-OutputPanel.FatalColor={magenta-hi}
+OutputPanel.WarningColor={orange-max}
+OutputPanel.ErrorColor={red-max}
+OutputPanel.FatalColor={magenta-max}
 OutputPanel.ProcessStartColor={blue}
 OutputPanel.ProcessEndColor={blue}
-OutputPanel.HighlightColor={base2}
+OutputPanel.HighlightColor={blue-min}
 
-QuickFind.ErrorBack={blue}
-ToolStripTextBoxControl.GrayText={base01}
+DataTreeControl.GrayText={base01}
+DataTreeControl.ErrorText={red}
+DataTreeControl.HighlightText={base2}
+DataTreeControl.LineColor={base02}
+
+ProjectTreeView.InputColor={yellow}
+ProjectTreeView.SubItemColor={base00}
+ProjectTreeView.ErrorColor={red}
+
 CompletionList.SelectedTextColor={base2}
 CompletionList.SelectedBackColor={blue}
 CompletionList.PackageColor={base00}
+
 MethodCallTip.SelectedBack={blue}
 MethodCallTip.InfoColor={base00}
+
+ToolStripTextBoxControl.GrayText={base01}
+QuickFind.ErrorBack={blue}
 
 # FD UI THEME (5.0+)
 

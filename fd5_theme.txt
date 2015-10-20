@@ -101,7 +101,7 @@ LinkLabel.ActiveLinkColor=0xdc322f
 # Disabled link text
 LinkLabel.DisabledLinkColor=0x6c71c4
 
-# List/table column header (Files panel has a files list view)
+# List/table column header (files list view in Files panel)
 # Background
 ColumnHeader.BackColor=0x073642
 # Text

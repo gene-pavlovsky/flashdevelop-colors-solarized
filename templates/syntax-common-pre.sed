@@ -10,8 +10,8 @@ s,{margin-fore},{base03},g
 s,{margin-back},{base03},g
 s,{marker-fore},{base03},g
 s,{marker-back},{base01},g
-s,{highlight-back},{green-hi},g
-s,{highlightword-back},{cyan-med},g
+s,{highlight-back},{green-max},g
+s,{highlightword-back},{cyan-high},g
 s,{modifiedline-back},{yellow},g
 
 s,{font-size},"11",g;

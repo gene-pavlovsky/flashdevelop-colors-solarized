@@ -1,7 +1,9 @@
 #!/bin/sh
 
-SOLARIZE_DARK="./solarize.sh"
-SOLARIZE_LIGHT="./solarize.sh -l -H"
+SOLARIZE_DARK="./solarize.sh -s"
+SOLARIZE_LIGHT="./solarize.sh -s -l -H"
+SOLARIZE_SYNTAX_OPTS="-q -c"
+SOLARIZE_THEME_OPTS=
 
 ZIP="7z a -tzip"
 BASE_DIR="\$(BaseDir)"
@@ -11,8 +13,8 @@ THEME_DIR="$BASE_DIR/Settings/Themes"
 mkdir dark light 2>/dev/null
 
 echo "Syntax:"
-$SOLARIZE_DARK -q -s >dark/syntax-solarize.sed
-$SOLARIZE_LIGHT -q -s >light/syntax-solarize.sed
+$SOLARIZE_DARK $SOLARIZE_SYNTAX_OPTS >dark/syntax-solarize.sed
+$SOLARIZE_LIGHT $SOLARIZE_SYNTAX_OPTS >light/syntax-solarize.sed
 for file in templates/*.xml*; do
 	outfile=${file:10}
 	echo "  $outfile"
@@ -22,8 +24,8 @@ done
 echo
 
 echo "Themes:"
-$SOLARIZE_DARK -s >dark/theme-solarize.sed
-$SOLARIZE_LIGHT -s >light/theme-solarize.sed
+$SOLARIZE_DARK $SOLARIZE_THEME_OPTS >dark/theme-solarize.sed
+$SOLARIZE_LIGHT $SOLARIZE_THEME_OPTS >light/theme-solarize.sed
 echo "  SolarizedDark.fdi"
 sed -f templates/theme-common-pre.sed -f templates/theme-dark.sed -f dark/theme-solarize.sed -f templates/theme-common-post.sed templates/Solarized.fdi >dist/SolarizedDark.fdi
 echo "  SolarizedLight.fdi"

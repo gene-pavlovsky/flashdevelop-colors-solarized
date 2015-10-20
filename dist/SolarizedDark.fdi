@@ -18,15 +18,26 @@ OutputPanel.ErrorColor=#ff3936
 OutputPanel.FatalColor=#ff429d
 OutputPanel.ProcessStartColor=#268bd2
 OutputPanel.ProcessEndColor=#268bd2
-OutputPanel.HighlightColor=#eee8d5
+OutputPanel.HighlightColor=#134569
 
-QuickFind.ErrorBack=#268bd2
-ToolStripTextBoxControl.GrayText=#586e75
+DataTreeControl.GrayText=#586e75
+DataTreeControl.ErrorText=#dc322f
+DataTreeControl.HighlightText=#eee8d5
+DataTreeControl.LineColor=#073642
+
+ProjectTreeView.InputColor=#b58900
+ProjectTreeView.SubItemColor=#657b83
+ProjectTreeView.ErrorColor=#dc322f
+
 CompletionList.SelectedTextColor=#eee8d5
 CompletionList.SelectedBackColor=#268bd2
 CompletionList.PackageColor=#657b83
+
 MethodCallTip.SelectedBack=#268bd2
 MethodCallTip.InfoColor=#657b83
+
+ToolStripTextBoxControl.GrayText=#586e75
+QuickFind.ErrorBack=#268bd2
 
 # FD UI THEME (5.0+)
 

@@ -11,12 +11,14 @@ usage() {
 		echo -e "  -l, --light\t\tswitch colors to light color scheme (default is dark)"
 		echo -e "  -H, --high-contrast\tadjust color scheme to high-contrast"
 		echo -e "  -q, --quote\t\tenclose color values in double quotes (\")"
+		echo -e "  -c, --c-prefix\tuse C-style hexadecimal prefix (0x) instead of hash (#)"
 		echo -e "  -s, --script\t\tinstead of processing a file, output a sed script file to stdout"
   } >&2
   exit 2
 }
 
 quote=
+prefix='#'
 
 while test $# -gt 0; do
 	case $1 in
@@ -31,6 +33,9 @@ while test $# -gt 0; do
 		;;
 		-q|--quote)
 			quote='"'
+		;;
+		-c|--c-prefix)
+			prefix='0x'
 		;;
 		-s|--script)
 			script=1
@@ -87,12 +92,12 @@ if test "$script"; then
 	test "$high_contrast" && echo -n ', high-contrast'
 	echo -e ')\n#\n'
 	for name in ${!colors[*]}; do
-		echo "s,{"$name"},$quote"${colors[$name]}"$quote,g"
+		echo "s,{"$name"},$quote$prefix"${colors[$name]}"$quote,g"
 	done | sort
 else
 	cmd='sed'
 	for name in ${!colors[*]}; do
-		cmd="$cmd -e s,{"$name"},$quote"${colors[$name]}"$quote,g"
+		cmd="$cmd -e s,{"$name"},$quote$prefix"${colors[$name]}"$quote,g"
 	done
 	$cmd
 fi
