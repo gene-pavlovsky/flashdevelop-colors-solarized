@@ -10,12 +10,13 @@ usage() {
 		echo -e "      --help\t\tprint this help, then exit"
 		echo -e "  -l, --light\t\tswitch colors to light color scheme (default is dark)"
 		echo -e "  -H, --high-contrast\tadjust color scheme to high-contrast"
-		echo -e "  -n, --no-quotes\tdon't use quotes"
+		echo -e "  -q, --quote\t\tenclose color values in double quotes (\")"
+		echo -e "  -s, --script\t\tinstead of processing a file, output a sed script file to stdout"
   } >&2
   exit 2
 }
 
-quote='"'
+quote=
 
 while test $# -gt 0; do
 	case $1 in
@@ -28,8 +29,11 @@ while test $# -gt 0; do
 		-H|--high-contrast)
 			high_contrast=1
 		;;
-		-n|--no-quotes)
-			quote=
+		-q|--quote)
+			quote='"'
+		;;
+		-s|--script)
+			script=1
 		;;
 		-?*)
 			echo "unrecognized option \"$1\"" >&2
@@ -43,7 +47,7 @@ while test $# -gt 0; do
 	shift
 done
 
-test "$read_stdin$filename" = "" && usage
+test "$read_stdin$filename$script" = "" && usage
 test "$filename" && exec <"$filename"
 
 declare -A colors
@@ -76,9 +80,19 @@ if test "$high_contrast"; then
 	assign base2 base3
 fi
 
-cmd='sed'
-for name in ${!colors[*]}; do
-	cmd="$cmd -e s/{"$name"}/$quote"${colors[$name]}"$quote/g"
-done
-
-$cmd
+if test "$script"; then
+	echo '# ******************************************************************************'
+	echo -n '# Solarized Colors ('
+	test "$light" && echo -n "light" || echo -n "dark"
+	test "$high_contrast" && echo -n ', high-contrast'
+	echo -e ')\n#\n'
+	for name in ${!colors[*]}; do
+		echo "s,{"$name"},$quote"${colors[$name]}"$quote,g"
+	done | sort
+else
+	cmd='sed'
+	for name in ${!colors[*]}; do
+		cmd="$cmd -e s,{"$name"},$quote"${colors[$name]}"$quote,g"
+	done
+	$cmd
+fi

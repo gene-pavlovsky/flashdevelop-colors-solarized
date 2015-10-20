@@ -1,6 +1,7 @@
 ﻿FlashDevelop bugs/feature requests
 	new
 		should flash log viewer support exceptions' "Error: " matching?
+		output panel search/filter highlighting - should also change foreground color (like selection); bug - clear results sometimes highlight with another color
 	submitted to FD team
 		horizontal line missing? on the bottom of all right-side dock panels
 		bookmarkline-back - apply semi-transparent if view bookmarks is true (same as breakpoints) 

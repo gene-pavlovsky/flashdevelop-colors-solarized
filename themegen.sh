@@ -11,20 +11,23 @@ THEME_DIR="$BASE_DIR/Settings/Themes"
 mkdir dark light 2>/dev/null
 
 echo "Syntax:"
+$SOLARIZE_DARK -q -s >dark/syntax-solarize.sed
+$SOLARIZE_LIGHT -q -s >light/syntax-solarize.sed
 for file in templates/*.xml*; do
 	outfile=${file:10}
 	echo "  $outfile"
-  sed -f templates/syntax-common.sed -f templates/syntax-dark.sed "$file" | $SOLARIZE_DARK - >dark/"$outfile"
-  sed -f templates/syntax-common.sed -f templates/syntax-light.sed "$file" | $SOLARIZE_LIGHT - >light/"$outfile"
+  sed -f templates/syntax-common-pre.sed -f templates/syntax-dark.sed -f dark/syntax-solarize.sed -f templates/syntax-common-post.sed "$file" >dark/"$outfile"
+  sed -f templates/syntax-common-pre.sed -f templates/syntax-light.sed -f light/syntax-solarize.sed -f templates/syntax-common-post.sed "$file" >light/"$outfile"
 done
 echo
 
 echo "Themes:"
+$SOLARIZE_DARK -s >dark/theme-solarize.sed
+$SOLARIZE_LIGHT -s >light/theme-solarize.sed
 echo "  SolarizedDark.fdi"
-sed -f templates/theme-common.sed -f templates/theme-dark.sed templates/Solarized.fdi | $SOLARIZE_DARK -n - >dist/SolarizedDark.fdi
-
+sed -f templates/theme-common-pre.sed -f templates/theme-dark.sed -f dark/theme-solarize.sed -f templates/theme-common-post.sed templates/Solarized.fdi >dist/SolarizedDark.fdi
 echo "  SolarizedLight.fdi"
-sed -f templates/theme-common.sed -f templates/theme-light.sed templates/Solarized.fdi | $SOLARIZE_LIGHT -n - >dist/SolarizedLight.fdi
+sed -f templates/theme-common-pre.sed -f templates/theme-light.sed -f light/theme-solarize.sed -f templates/theme-common-post.sed templates/Solarized.fdi >dist/SolarizedLight.fdi
 
 echo
 echo "Packaging themes:"

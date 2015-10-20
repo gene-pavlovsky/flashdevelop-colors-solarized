@@ -1,5 +1,5 @@
 # ******************************************************************************
-# Syntax Coloring (common)
+# Syntax Coloring (common, applied before theme-specific script)
 #
 
 s,{caret-fore},{base2},g
@@ -52,4 +52,3 @@ s,{bracelight-back},{base02},g
 s,{indentguide-fore},{base02},g
 
 s,[a-z][-_a-z0-9]*={\(word4\|bracebad\)-[a-z]*},,g
-s/ \{2,\}/ /g

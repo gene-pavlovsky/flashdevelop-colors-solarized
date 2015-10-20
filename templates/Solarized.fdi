@@ -85,7 +85,7 @@ VS2005DockPaneStrip.DocTabActiveBorder={base01}
 VS2005DockPaneStrip.DocTabActiveForeColor={blue}
 VS2005DockPaneStrip.DocTabInactiveBorder={base03}
 VS2005DockPaneStrip.ToolActiveBorderColor={base1}
-VS2005DockPaneStrip.ToolBorderColor={base03} # unused
+#VS2005DockPaneStrip.ToolBorderColor={base03}
 VS2005DockPaneStrip.ToolActiveForeColor={base2}
 VS2005DockPaneStrip.ToolSeparatorColor={base03}
 VS2005DockPaneStrip.ImageColor={base1}
@@ -185,7 +185,7 @@ ToolStrip.3dDarkColor={base00}
 ToolStripItem.BackColor={base01}
 ToolStripItem.BorderColor={base0}
 
-ToolStripComboBoxControl.ForeColor={base1}
+ToolStripComboBoxControl.ForeColor={base2}
 ToolStripComboBoxControl.BackColor={base03}
 
 ToolStripTextBoxControl.ForeColor={base2}
@@ -195,7 +195,7 @@ ToolStripTextBoxControl.BackColor={base03}
 
 DockPanel.BackColor={base01}
 
-#AutoHideWindowControl.ForeColor=#FF0000 ???
+#AutoHideWindowControl.ForeColor={base1}
 AutoHideWindowControl.BackColor={base01}
 
 VS2005DockPaneCaption.ForeColor={base2}
