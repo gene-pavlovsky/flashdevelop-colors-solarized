@@ -1,0 +1,19 @@
+#include "editor.xml.inc"
+<use-styles>
+	#include "general.xml.inc"
+	<style name="commentline" fore={comment-fore} />
+	<style name="number" fore={number-fore} />
+	<style name="word" fore={python-word-fore} />
+	<style name="string" fore={string-fore} />
+	<style name="character" fore={character-fore} />
+	<style name="triple" />
+	<style name="tripledouble" />
+	<style name="classname" />
+	<style name="defname" />
+	<style name="operator" fore={operator-fore} />
+	<style name="identifier" fore={identifier-fore} />
+	<style name="commentblock" fore={base00} />
+	<style name="stringeol" fore={stringeol-fore} />
+	<style name="word2" fore={word2-fore} />
+	<style name="decorator" />
+</use-styles>

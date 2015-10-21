@@ -2,9 +2,8 @@
 #
 # xml_to_override.awk: helper script for xml_to_override.sh
 
-/COLORING_START/ { 
-	output=1
-	num_tabs = gsub(/\t/, "")
+/COLORING_END/ {
+	exit 0
 }
 
 {
@@ -16,6 +15,7 @@
 	}
 }
 
-/COLORING_END/ { 
-	exit 0 
+/COLORING_START/ {
+	output=1
+	num_tabs = gsub(/\t/, "")
 }

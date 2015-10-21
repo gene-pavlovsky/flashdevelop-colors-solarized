@@ -1,0 +1,11 @@
+#include "editor.xml.inc"
+<use-styles>
+	#include "general.xml.inc"
+	<style name="comment" fore={comment-fore} />
+	<style name="word" fore={word-fore} />
+	<style name="label" fore={base2} back={blue} eolfilled="true" />
+	<style name="hide" fore={magenta} />
+	<style name="command" fore={blue} />
+	<style name="operator" fore={operator-fore} />
+	<style name="identifier" fore={identifier-fore} />
+</use-styles>

@@ -1,0 +1,9 @@
+#include "editor.xml.inc"
+<use-styles>
+	#include "general.xml.inc"
+	<style name="comment" fore={comment-fore} />
+	<style name="section" fore={base2} back={blue} eolfilled="true" />
+	<style name="assignment" fore={orange} />
+	<style name="defval" />
+	<style name="key" fore={blue} />
+</use-styles>

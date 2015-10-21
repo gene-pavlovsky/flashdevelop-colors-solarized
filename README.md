@@ -16,11 +16,7 @@ Screenshots
 
 Downloads
 ------------
-<<<<<<< HEAD
 [Solarized Easy-Install Set](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SolarizedThemes.fdz?raw=true) (Dark and Light)  
-=======
-[Solarized Easy-Install Set](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SolarizedThemes.fdz?raw=true) (Dark and Light)
->>>>>>> 507fb4f54b74c6398bde252d68c45e42020524e4
 [Complete ZIP of the repository](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/archive/master.zip)
 
 Installation

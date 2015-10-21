@@ -1,5 +1,3 @@
-### SolarizedDark.fdi
-
 # FD UI THEME (5.1+)
 
 ListView.Highlight=#268bd2
@@ -25,9 +23,9 @@ DataTreeControl.ErrorText=#dc322f
 DataTreeControl.HighlightText=#eee8d5
 DataTreeControl.LineColor=#073642
 
-ProjectTreeView.InputColor=#b58900
 ProjectTreeView.SubItemColor=#657b83
 ProjectTreeView.ErrorColor=#dc322f
+ProjectTreeView.InputColor=#b58900
 
 CompletionList.SelectedTextColor=#eee8d5
 CompletionList.SelectedBackColor=#268bd2
@@ -38,27 +36,22 @@ MethodCallTip.SelectedBack=#268bd2
 MethodCallTip.InfoColor=#657b83
 
 DataGridView.LineColor=#073642
+
 ToolStripTextBoxControl.GrayText=#586e75
+
 QuickFind.ErrorBack=#268bd2
 
 # FD UI THEME (5.0+)
 
-#ThemeManager.UseInheritance=True
-
-# Bright, Default, Dim, Dark, Darker, Black
 ImageManager.ImageSet=Darker
 
-# Default, Large
 VS2005DockPaneStrip.TabSize=Large
 
-# Default, Block, Rect
 VS2005DockPaneStrip.TabStyle=Rect
 
-# Default, Underlined
 VS2005AutoHideStrip.TabStyle=Underlined
 VS2005AutoHideStrip.TabUnderlineColor=#586e75
 
-# Default (Hover), Click
 DockPanel.ShowAutoHideContentOn=Hover
 
 ScrollBar.ForeColor=#586e75
@@ -79,6 +72,7 @@ ColumnHeader.BorderColor=#657b83
 
 ToolStripComboBoxControl.BorderColor=#657b83
 ToolStripComboBoxControl.ActiveBorderColor=#93a1a1
+
 ToolStripTextBoxControl.BorderColor=#657b83
 
 ToolStrip.BorderColor=#657b83
@@ -98,7 +92,6 @@ VS2005DockPaneStrip.DocTabActiveBorder=#586e75
 VS2005DockPaneStrip.DocTabActiveForeColor=#268bd2
 VS2005DockPaneStrip.DocTabInactiveBorder=#002b36
 VS2005DockPaneStrip.ToolActiveBorderColor=#93a1a1
-#VS2005DockPaneStrip.ToolBorderColor=#002b36
 VS2005DockPaneStrip.ToolActiveForeColor=#eee8d5
 VS2005DockPaneStrip.ToolSeparatorColor=#002b36
 VS2005DockPaneStrip.ImageColor=#93a1a1
@@ -118,8 +111,6 @@ ProjectTreeView.ExternalLibraryTextColor=#859900
 ProjectTreeView.IncludedLibraryTextColor=#2aa198
 
 # FD UI THEME (4.3+)
-
-### EDIT CONTROLS
 
 ListBox.ForeColor=#93a1a1
 ListBox.BackColor=#002b36
@@ -167,8 +158,6 @@ MessageBar.BackColor=#268bd2
 Panel.ForeColor=#93a1a1
 Panel.BackColor=#002b36
 
-### MAIN INTERFACE
-
 QuickFind.ForeColor=#93a1a1
 QuickFind.BackColor=#073642
 
@@ -178,8 +167,6 @@ SplitterPanel.BackColor=#073642
 
 LinkLabel.ForeColor=#93a1a1
 LinkLabel.BackColor=#002b36
-
-### MENUS AND TOOLBARS
 
 TreeBar.ForeColor=#93a1a1
 TreeBar.BackColor=#073642
@@ -204,11 +191,8 @@ ToolStripComboBoxControl.BackColor=#002b36
 ToolStripTextBoxControl.ForeColor=#eee8d5
 ToolStripTextBoxControl.BackColor=#002b36
 
-### DOCK SYSTEM
-
 DockPanel.BackColor=#586e75
 
-#AutoHideWindowControl.ForeColor=#93a1a1
 AutoHideWindowControl.BackColor=#586e75
 
 VS2005DockPaneCaption.ForeColor=#eee8d5

@@ -1,0 +1,5 @@
+#include "editor.xml.inc"
+<use-styles>
+	#include "general.xml.inc"
+	#include "xml.xml.inc"
+</use-styles>

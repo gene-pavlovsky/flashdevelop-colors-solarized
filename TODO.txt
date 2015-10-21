@@ -1,5 +1,12 @@
-﻿FlashDevelop bugs/feature requests
+Issues
+	bugs
+		method call tip highlight back has low contrast with info text
+	enhancements
+		theme: use an extra substitution for same values used in different places (e.g. all/almost all highlight text settings have the same color), use theme-pre.sed 
+
+FlashDevelop bugs/feature requests
 	new
+		locals and watch debugger panels use DataTreeControl.ForeColor, but TreeViewAdv.BackColor
 		should flash log viewer support exceptions' "Error: " matching?
 		output panel search/filter highlighting - should also change foreground color (like selection); bug - clear results sometimes highlight with another color
 	submitted to FD team

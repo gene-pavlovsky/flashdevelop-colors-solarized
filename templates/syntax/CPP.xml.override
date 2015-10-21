@@ -1,0 +1,6 @@
+#include "editor.xml.inc"
+<use-styles>
+	#include "general.xml.inc"
+	#include "lang-c.xml.inc"
+	#include "comments.xml.inc"
+</use-styles>
