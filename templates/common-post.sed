@@ -1,5 +1,4 @@
 # ******************************************************************************
-# Syntax Coloring (common, applied after theme-specific script)
+# Common, applied last
 #
 
-s/ \{2,\}/ /g

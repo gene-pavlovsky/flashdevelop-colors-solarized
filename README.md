@@ -3,7 +3,7 @@ FlashDevelop Solarized Theme and Syntax Colorscheme
 
 Developed by Gene Pavlovsky <gene.pavlovsky@gmail.com>
 
-A [Solarized](http://ethanschoonover.com/solarized) theme and syntax colorscheme for FlashDevelop. Compatible with FD5.
+A [Solarized](http://ethanschoonover.com/solarized) theme (light and dark) and syntax colorscheme for FlashDevelop. Compatible with FD5.
 
 Screenshots
 -----------
@@ -16,34 +16,20 @@ Screenshots
 
 Downloads
 ------------
-[SolarizedDark-FullTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/FullThemes/SolarizedDark.fdz?raw=true) includes both UI theme and syntax colorscheme.  
-[SolarizedLight-FullTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/FullThemes/SolarizedLight.fdz?raw=true) includes both UI theme and syntax colorscheme.  
-[SolarizedDark-SyntaxTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SyntaxThemes/SolarizedDark.fdz?raw=true)  
-[SolarizedLight-SyntaxTheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SyntaxThemes/SolarizedLight.fdz?raw=true)  
-[SolarizedDark-UITheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SolarizedDark.fdi?raw=true)  
-[SolarizedLight-UITheme](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SolarizedLight.fdi?raw=true)  
-[Complete ZIP](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/archive/master.zip)
+[Solarized Easy-Install Set](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/blob/master/dist/SolarizedThemes.fdz?raw=true) (Dark and Light)
+[Complete ZIP of the repository](https://github.com/gene-pavlovsky/flashdevelop-colors-solarized/archive/master.zip)
 
 Installation
 ------------
 
-It's recommended to restart FlashDevelop after switching a theme.
+It's recommended to restart FlashDevelop after switching to another theme.
 
 ### Option 1
 
-Double-click a colorscheme (.fdz) or a full theme (.fdz) and let FlashDevelop do the import. Alternatively, drag and drop the .fdz file into FlashDevelop.
+Download and open the easy-install set (SolarizedThemes.fdz) and let FlashDevelop install the themes in the user directory. Alternatively, drag and drop SolarizedThemes.fdz into FlashDevelop.
 
 ### Option 2
 
-1. Use FlashDevelop `Tools > Select UI Theme...` menu item.
-2. Select a colorscheme (.fdz) or a UI theme (.fdi) or a full theme (.fdz) that includes both.
-
-### Option 3
-
-Convenient if you switch themes often, for example use SolarizedLight during the day, SolarizedDark at night.
-
-1. Download the Complete ZIP of the repository.
-2. Copy the contents of the `dist` folder into the FlashDevelop themes folder (`%LOCALAPPDATA%\FlashDevelop\Settings\Themes`, `%ProgramFiles\FlashDevelop\Settings\Themes`, `%ProgramFiles(x86)%\FlashDevelop\Settings\Themes` on 64-bit Windows)
-3. Use FlashDevelop `Tools > Select UI Theme...` menu item.
-4. Select a colorscheme (.fdz) or a UI theme (.fdi) or a full theme (.fdz) that includes both.
+1. Download and extract the complete ZIP of the repository. The themes are in the `dist` folder.
+2. Use FlashDevelop `Tools > Select UI Theme...` menu item, navigate to the `dist` folder, and pick a theme. An `.fdi` file contains the UI theme, an `.fdz` file in `SyntaxThemes` contains the syntax colorscheme and an `.fdz` file in `FullThemes` contains both.
 
