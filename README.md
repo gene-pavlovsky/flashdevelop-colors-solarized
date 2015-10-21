@@ -31,12 +31,12 @@ It's recommended to restart FlashDevelop after switching a theme.
 
 ### Option 1
 
-Double-click a colorscheme (.fdz file) and let FlashDevelop do the import. Alternatively, drag and drop the .fdz file into FlashDevelop.
+Double-click a colorscheme (.fdz) or a full theme (.fdz) and let FlashDevelop do the import. Alternatively, drag and drop the .fdz file into FlashDevelop.
 
 ### Option 2
 
 1. Use FlashDevelop `Tools > Select UI Theme...` menu item.
-2. Select a colorscheme (.fdz file) or a UI theme (.fdi file).
+2. Select a colorscheme (.fdz) or a UI theme (.fdi) or a full theme (.fdz) that includes both.
 
 ### Option 3
 
@@ -45,5 +45,5 @@ Convenient if you switch themes often, for example use SolarizedLight during the
 1. Download the Complete ZIP of the repository.
 2. Copy the contents of the `dist` folder into the FlashDevelop themes folder (`%LOCALAPPDATA%\FlashDevelop\Settings\Themes`, `%ProgramFiles\FlashDevelop\Settings\Themes`, `%ProgramFiles(x86)%\FlashDevelop\Settings\Themes` on 64-bit Windows)
 3. Use FlashDevelop `Tools > Select UI Theme...` menu item.
-4. Select a colorscheme (.fdz file) or a UI theme (.fdi file).
+4. Select a colorscheme (.fdz) or a UI theme (.fdi) or a full theme (.fdz) that includes both.
 

@@ -33,9 +33,11 @@ CompletionList.SelectedTextColor=#eee8d5
 CompletionList.SelectedBackColor=#268bd2
 CompletionList.PackageColor=#657b83
 
+MethodCallTip.SelectedFore=#eee8d5
 MethodCallTip.SelectedBack=#268bd2
 MethodCallTip.InfoColor=#657b83
 
+DataGridView.LineColor=#073642
 ToolStripTextBoxControl.GrayText=#586e75
 QuickFind.ErrorBack=#268bd2
 

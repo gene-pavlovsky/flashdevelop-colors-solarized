@@ -33,9 +33,11 @@ CompletionList.SelectedTextColor={base2}
 CompletionList.SelectedBackColor={blue}
 CompletionList.PackageColor={base00}
 
+MethodCallTip.SelectedFore={base2}
 MethodCallTip.SelectedBack={blue}
 MethodCallTip.InfoColor={base00}
 
+DataGridView.LineColor={base02}
 ToolStripTextBoxControl.GrayText={base01}
 QuickFind.ErrorBack={blue}
 
