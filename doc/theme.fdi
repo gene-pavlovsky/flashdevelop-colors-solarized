@@ -66,7 +66,7 @@ CompletionList.PackageColor=#657b83
 # Selected argument text
 MethodCallTip.SelectedFore=#eee8d5
 # Selected argument background
-MethodCallTip.SelectedBack=#268bd2
+MethodCallTip.SelectedBack=#134569
 # Additional info text
 MethodCallTip.InfoColor=#657b83
 

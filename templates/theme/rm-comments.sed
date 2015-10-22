@@ -2,7 +2,10 @@
 # Theme (remove comments)
 #
 
-# Remove comments except those that start with " FD UI ".
-/^#.*/ {
-	/^# FD UI /! d
-}
+# Keep comments that start with " FD UI ".
+/^# FD UI / bn
+
+# Remove comments.
+/^#.*/ d
+
+:n

@@ -1,3 +1,4 @@
+<!-- COLORING_START -->
 <!--
 	caret-fore - caret color
 	caretline-back - caret line background
@@ -31,7 +32,7 @@
 	<!-- matching brace -->
 	<style name="bracelight" fore="0xdc322f" back="0x073642" bold="true" />
 	<!-- unmatched brace, seemingly irrelevant (unmatched braces are displayed with the default style and red curly underline) -->
-	<!--<style name="bracebad" fore={bracebad-fore} back={bracebad-back} bold="true" />-->
+	<style name="bracebad" bold="true" />
 	<!-- control characters (char codes from 0 to 31); font, size, bold, italics are used, but not the colors -->
 	<style name="controlchar" bold="true" />
 	<!-- block indent guides -->
@@ -42,3 +43,4 @@
 	<style name="defval" />
 	<style name="key" fore="0x268bd2" />
 </use-styles>
+<!-- COLORING_END -->

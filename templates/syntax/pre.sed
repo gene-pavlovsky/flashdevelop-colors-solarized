@@ -2,6 +2,9 @@
 # Syntax Coloring (common, applied before theme-specific script)
 #
 
+# Disabled
+/<style name="\(bracebad\|uuid\|word4\)"/ s,[a-z][-_a-z0-9]*={[^}]*},,g
+
 # Editor
 s,{caret-fore},{base2},g
 s,{caretline-back},{base02},g
@@ -11,13 +14,13 @@ s,{margin-fore},{base03},g
 s,{margin-back},{base03},g
 s,{marker-fore},{base03},g
 s,{marker-back},{base01},g
-s,{highlight-back},{green-max},g
+s,{highlight-back},{green-high},g
 s,{highlightword-back},{cyan-high},g
 s,{modifiedline-back},{yellow},g
 #s,{bookmarkline-back},{yellow-min},g
 
 # General
-s,{font-size},"11",g;
+s,{font-size},"11",g
 s,{font-face},"Consolas",g
 s,{default-fore},{base1},g
 s,{default-back},{base03},g

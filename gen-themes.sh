@@ -3,15 +3,15 @@
 # gen-themes.sh: generates theme files from a set of templates and sed scripts, and packages them for import into FlashDevelop
 
 usage() {
-  {
-    echo "Usage: "$(basename "$0")" [options]"
-    echo
+	{
+		echo "Usage: "$(basename "$0")" [options]"
+		echo
 		echo "Options:"
 		echo -e "      --help\t\tprint this help, then exit"
 		echo -e "  -c, --comments\tkeep comments in the generated theme files (default is to strip them)"
 		echo -e "  -d, --docs\t\tgenerate docs (implies --keep-comments)"
-  } >&2
-  exit 2
+	} >&2
+	exit 2
 }
 
 while test $# -gt 0; do
@@ -34,6 +34,10 @@ while test $# -gt 0; do
 	
 	shift
 done
+
+# **********************************************************************************************************************
+# Constants
+#
 
 SOLARIZE_DARK="./solarized/solarize.sh -s"
 SOLARIZE_LIGHT="./solarized/solarize.sh -s -l -H"
@@ -65,52 +69,52 @@ fi
 INCLUDE_PP="scripts/include_pp.awk"
 SQUEEZE="scripts/cat-s.sed"
 
-ZIP="7z a -tzip"
+ZIP="7z a -tzip -xr!*.tmp"
 BASE_DIR="\$(BaseDir)"
 SYNTAX_DIR="$BASE_DIR/Settings/Languages"
 THEME_DIR="$BASE_DIR/Settings/Themes"
 
+# **********************************************************************************************************************
+# Functions
+#
+
 error() {
-	test "$1" && echo -e "Error during: $@" || echo -e "Error"
+	{
+		test "$1" && echo -e "Error during: $@" || echo -e "Error"
+	} >&2
 	exit 1
 }
 set -o pipefail
 
-mkdir dark light 2>/dev/null
+gen_syntax() {
+	eval local syntax='${SYNTAX_'${1^^}'}'
+	{
+		echo '<!-- COLORING_START -->'
+		(cd $SYNTAX_PATH && exec awk -f "$BASE_PATH/$INCLUDE_PP" "$BASE_PATH/$2") | sed -f $SYNTAX_PRE -f $syntax -f $SYNTAX_POST -f $1/solarize.sed -f $SYNTAX_RMC | sed -f $SQUEEZE || error syntax-$1: "$3"
+		echo -n '<!-- COLORING_END -->'
+	} >"$1/$3"
+}
 
-echo "Syntax:"
-$SOLARIZE_DARK $SOLARIZE_SYNTAX_OPTS >dark/solarize.sed
-$SOLARIZE_LIGHT $SOLARIZE_SYNTAX_OPTS >light/solarize.sed
-for file in $SYNTAX_PATH/*.xml.override; do
-	outfile=${file:$((${#SYNTAX_PATH}+1))}
-	echo "  $outfile"
-	(cd $SYNTAX_PATH && exec awk -f "$BASE_PATH/$INCLUDE_PP" "$BASE_PATH/$file") | sed -f $SYNTAX_RMC -f $SYNTAX_PRE -f $SYNTAX_DARK -f dark/solarize.sed -f $SYNTAX_POST | sed -f $SQUEEZE >dark/"$outfile" || error syntax-dark: "$outfile"
-	(cd $SYNTAX_PATH && exec awk -f "$BASE_PATH/$INCLUDE_PP" "$BASE_PATH/$file") | sed -f $SYNTAX_RMC -f $SYNTAX_PRE -f $SYNTAX_LIGHT -f light/solarize.sed -f $SYNTAX_POST | sed -f $SQUEEZE >light/"$outfile" || error syntax-light: "$outfile"
-done
-echo
- 
-echo "Themes:"
-$SOLARIZE_DARK $SOLARIZE_THEME_OPTS >dark/solarize.sed
-$SOLARIZE_LIGHT $SOLARIZE_THEME_OPTS >light/solarize.sed
-echo "  SolarizedDark.fdi"
-sed -f $THEME_RMC -f $THEME_PRE -f $THEME_DARK -f dark/solarize.sed -f $THEME_POST $THEME_PATH/theme.fdi | sed -f $SQUEEZE >dist/SolarizedDark.fdi || error theme-dark
-echo "  SolarizedLight.fdi"
-sed -f $THEME_RMC -f $THEME_PRE -f $THEME_LIGHT -f light/solarize.sed -f $THEME_POST $THEME_PATH/theme.fdi | sed -f $SQUEEZE >dist/SolarizedLight.fdi || error theme-light
-echo
+gen_theme() {
+	echo "  Solarized${1^}.fdi"
+	eval local theme='${THEME_'${1^^}'}'
+	sed -f $THEME_PRE -f $theme -f $THEME_POST -f $1/solarize.sed -f $THEME_RMC $THEME_PATH/theme.fdi | sed -f $SQUEEZE >dist/Solarized$1.fdi || error theme-$1
+}
 
 package_theme() {
-	echo "$1:"
+	local title=${1^}
+	echo "$title:"
 	rm -rf "$BASE_DIR"
 	mkdir -p "$SYNTAX_DIR"
-	cp ../${1,,}/*.xml.override "$SYNTAX_DIR"
-	rm -f SyntaxThemes/Solarized$1.fdz
-	$ZIP SyntaxThemes/Solarized$1.fdz "$BASE_DIR" || error zip-syntax: ${1,,}
+	cp ../$1/*.xml.override "$SYNTAX_DIR"
+	rm -f SyntaxThemes/Solarized$title.fdz
+	$ZIP SyntaxThemes/Solarized$title.fdz "$BASE_DIR" || error zip-syntax: $1
 	echo
 	mkdir -p "$THEME_DIR"
-	cp Solarized$1.fdi "$THEME_DIR"
-	cp Solarized$1.fdi "$THEME_DIR/CURRENT"
-	rm -f FullThemes/Solarized$1.fdz
-	$ZIP FullThemes/Solarized$1.fdz "$BASE_DIR" || error zip-theme: ${1,,}
+	cp Solarized$title.fdi "$THEME_DIR"
+	cp Solarized$title.fdi "$THEME_DIR/CURRENT"
+	rm -f FullThemes/Solarized$title.fdz
+	$ZIP FullThemes/Solarized$title.fdz "$BASE_DIR" || error zip-theme: $1
 	rm -rf "$BASE_DIR"
 	echo
 }
@@ -120,21 +124,47 @@ package_theme_set() {
 	rm -rf "$BASE_DIR"
 	mkdir -p "$THEME_DIR"
 	cp -a FullThemes SyntaxThemes *.fdi "$THEME_DIR"
+	rm -f SolarizedThemes.fdz
 	$ZIP SolarizedThemes.fdz "$BASE_DIR" || error zip-themes
 	rm -rf "$BASE_DIR"
 	echo
 }
 
+# **********************************************************************************************************************
+# Body
+#
+
+mkdir dark light 2>/dev/null
+
+echo "Syntax:"
+$SOLARIZE_DARK $SOLARIZE_SYNTAX_OPTS >dark/solarize.sed
+$SOLARIZE_LIGHT $SOLARIZE_SYNTAX_OPTS >light/solarize.sed
+for file in $SYNTAX_PATH/*.xml.override; do
+	outfile=${file:$((${#SYNTAX_PATH}+1))}
+	echo "  $outfile"
+	gen_syntax dark "$file" "$outfile"
+	test -z "$docs" && gen_syntax light "$file" "$outfile"
+done
+echo
+
+echo "Themes:"
+$SOLARIZE_DARK $SOLARIZE_THEME_OPTS >dark/solarize.sed
+$SOLARIZE_LIGHT $SOLARIZE_THEME_OPTS >light/solarize.sed
+gen_theme dark
+test -z "$docs" && gen_theme light
+echo
+
 if test -z "$docs"; then
 	echo "Packaging themes:"
 	cd dist
-	package_theme Dark
-	package_theme Light
+	package_theme dark
+	package_theme light
 	package_theme_set
 	cd ..
 else
 	echo -n "Copying docs... "
 	cp dist/SolarizedDark.fdi doc/theme.fdi
+	rm -f doc/syntax/*.xml.override
 	cp dark/*.xml.override doc/syntax
 	echo -e "done\n"
 fi

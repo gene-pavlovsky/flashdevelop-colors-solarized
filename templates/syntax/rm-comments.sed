@@ -3,8 +3,8 @@
 #
 
 # Remove single-line comments.
-/^\s*<!--.*-->\s*$/d
+/^\s*<!--.*-->\s*$/ d
 s/<!--.*-->//g
 
 # Remove multi-line comments.
-/^\s*<!--/,/-->/d
+/^\s*<!--/,/-->/ d

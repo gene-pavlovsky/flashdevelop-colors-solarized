@@ -1,4 +1,23 @@
 #include "editor.xml.inc"
 <use-styles>
 	#include "general.xml.inc"
+	<style name="number" />
+	<style name="character" />
+	<style name="string" />
+	<style name="verbatim" />
+	<style name="stringeol" />
+	<style name="regex" />
+	<style name="uuid" />
+	<style name="preprocessor" />
+	<style name="operator" />
+	<style name="identifier" />
+	<style name="globalclass" />
+	<style name="word" />
+	<style name="word2" />
+	<style name="comment" />
+	<style name="commentline" />
+	<style name="commentdoc" />
+	<style name="commentlinedoc" />
+	<style name="commentdockeyword" />
+	<style name="commentdockeyworderror" />
 </use-styles>

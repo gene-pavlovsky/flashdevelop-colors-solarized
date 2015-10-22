@@ -32,4 +32,3 @@ Download and open the easy-install set (SolarizedThemes.fdz) and let FlashDevelo
 
 1. Download and extract the complete ZIP of the repository. The themes are in the `dist` folder.
 2. Use FlashDevelop `Tools > Select UI Theme...` menu item, navigate to the `dist` folder, and pick a theme. An `.fdi` file contains the UI theme, an `.fdz` file in `SyntaxThemes` contains the syntax colorscheme and an `.fdz` file in `FullThemes` contains both.
-

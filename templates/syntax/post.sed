@@ -3,4 +3,4 @@
 #
 
 # Replace multiple consecutive spaces with a single space.
-s/ \{2,\}/ /g
+s/  \+/ /g

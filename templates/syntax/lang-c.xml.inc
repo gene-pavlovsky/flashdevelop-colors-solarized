@@ -10,10 +10,10 @@
 <style name="stringeol" fore={stringeol-fore} />
 <!-- literal regular expressions -->
 <style name="regex" fore={regex-fore} />
+<!-- IDL UUID, seemingly disabled -->
+<style name="uuid" fore={uuid-fore} />
 <!-- preprocessor directives starting with a hash # -->
 <style name="preprocessor" fore={preprocessor-fore} />
-<!-- IDL UUID, seemingly disabled -->
-<!--<style name="uuid" fore={uuid-fore} />-->
 <!-- operators -->
 <style name="operator" fore={operator-fore} />
 <!-- identifier (variables, functions, classes) -->

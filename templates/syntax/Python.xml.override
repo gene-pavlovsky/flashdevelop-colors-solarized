@@ -8,7 +8,7 @@
 	<style name="character" fore={character-fore} />
 	<style name="triple" />
 	<style name="tripledouble" />
-	<style name="classname" />
+	<style name="classname" fore={blue} />
 	<style name="defname" />
 	<style name="operator" fore={operator-fore} />
 	<style name="identifier" fore={identifier-fore} />

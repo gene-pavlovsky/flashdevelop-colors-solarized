@@ -2,3 +2,6 @@
 *.awk text eol=lf
 *.sed text eol=lf
 *.sh text eol=lf
+*.override text eol=lf
+*.inc text eol=lf
+*.fdi text eol=lf

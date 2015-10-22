@@ -1,3 +1,4 @@
+<!-- COLORING_START -->
 <!--
 	caret-fore - caret color
 	caretline-back - caret line background
@@ -31,9 +32,29 @@
 	<!-- matching brace -->
 	<style name="bracelight" fore="0xdc322f" back="0x073642" bold="true" />
 	<!-- unmatched brace, seemingly irrelevant (unmatched braces are displayed with the default style and red curly underline) -->
-	<!--<style name="bracebad" fore={bracebad-fore} back={bracebad-back} bold="true" />-->
+	<style name="bracebad" bold="true" />
 	<!-- control characters (char codes from 0 to 31); font, size, bold, italics are used, but not the colors -->
 	<style name="controlchar" bold="true" />
 	<!-- block indent guides -->
 	<style name="indentguide" fore="0x073642" />
+	<style name="number" />
+	<style name="character" />
+	<style name="string" />
+	<style name="verbatim" />
+	<style name="stringeol" />
+	<style name="regex" />
+	<style name="uuid" />
+	<style name="preprocessor" />
+	<style name="operator" />
+	<style name="identifier" />
+	<style name="globalclass" />
+	<style name="word" />
+	<style name="word2" />
+	<style name="comment" />
+	<style name="commentline" />
+	<style name="commentdoc" />
+	<style name="commentlinedoc" />
+	<style name="commentdockeyword" />
+	<style name="commentdockeyworderror" />
 </use-styles>
+<!-- COLORING_END -->
