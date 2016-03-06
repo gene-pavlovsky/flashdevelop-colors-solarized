@@ -163,6 +163,7 @@ if test -z "$docs"; then
 	cd ..
 else
 	echo -n "Copying docs... "
+	mkdir -p doc/syntax 2>/dev/null
 	cp dist/SolarizedDark.fdi doc/theme.fdi
 	rm -f doc/syntax/*.xml.override
 	cp dark/*.xml.override doc/syntax
