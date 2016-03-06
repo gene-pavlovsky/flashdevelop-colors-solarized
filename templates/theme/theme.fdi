@@ -2,6 +2,16 @@
 
 # FD UI THEME (5.1+)
 
+# Toolbars (main and panel toolbars)
+# Style (System, Professional) (default is Professional)
+Global.UiRenderMode=Professional
+
+# Combo boxes that appear in toolbars and panels (Debug/Release build in main toolbar, path selector in Files panel)
+# Style (Flat, Popup, Standard, System) (default is Popup)
+ComboBox.FlatStyle=Popup
+
+# Group list items (items in Tasks, Bookmarks panels)
+ListView.UseGrouping=True
 # Highlighted item background (current item in the Results panel)
 ListView.Highlight={highlight-back}
 # Highlighted item text (current item in the Results panel)
@@ -48,12 +58,12 @@ DataTreeControl.HighlightText={highlight1}
 DataTreeControl.LineColor={grid-line-color}
 
 # Project tree view (tree view in Project panel)
+# Input SWF node text (TODO: What is this?)
+ProjectTreeView.InputColor={yellow}
 # SWF/SWC internal node text (e.g. exploring inside of an SWC or an SWF)
 ProjectTreeView.SubItemColor={content2}
 # SWF/SWC node text if there is an issue reading an SWF/SWC
 ProjectTreeView.ErrorColor={red}
-# Input SWF node text (?)
-ProjectTreeView.InputColor={yellow}
 
 # Completion list, snippet list (press Ctrl-B in the editor to open the snippets list, Ctrl-Alt-Space or type "new " to see the class name completion list)
 # Selected line text
@@ -106,18 +116,28 @@ VS2005AutoHideStrip.TabUnderlineColor={content1}
 DockPanel.ShowAutoHideContentOn=Hover
 
 # Editor scrollbars
-# Thumb and buttons
-ScrollBar.ForeColor={content1}
+# Enable custom scrollbar style
+ScrollBar.UseCustom=True
 # Background
 ScrollBar.BackColor={background2}
+# Disabled background
+ScrollBar.DisabledBackColor={background2}
 # Rectangular border
 ScrollBar.BorderColor={background2}
-# Thumb during dragging
-ScrollBar.ActiveForeColor={content4}
-# Disabled scrollbar background
-ScrollBar.DisabledBackColor={background2}
-# Disabled scrollbar border
+# Disabled rectangular border
 ScrollBar.DisabledBorderColor={background2}
+# Thumb button
+ScrollBar.ForeColor={content1}
+# Thumb button when hovered
+ScrollBar.HotForeColor={content2}
+# Thumb button when pressed
+ScrollBar.ActiveForeColor={content4}
+# Arrow buttons
+ScrollBar.ArrowColor={content1}
+# Arrow buttons when hovered
+ScrollBar.HotArrowColor={content2}
+# Arrow buttons when pressed
+ScrollBar.ActiveArrowColor={content4}
 # Small line marking the position of the caret line on the vertical scrollbar
 ScrollBar.CurrentPositionColor={scrollbar-current-pos}
 
@@ -421,7 +441,7 @@ VS2005DockPaneStrip.DocActiveBackColor={background1}
 VS2005DockPaneStrip.DocInactiveBackColor={background2}
 # Horizontal line below the active tab
 VS2005DockPaneStrip.TabSeparatorColor={background1}
-# Two thick vertical lines on the left and right of the last tab (bug? issue #)
+# Two thick vertical lines on the left and right of an arbitrary tab (issue #830) (TODO: What is this?)
 VS2005DockPaneStrip.TabStripColor={background2}
 
 # Auto-hide panel strip (panel icons/titles when auto-hide is enabled)

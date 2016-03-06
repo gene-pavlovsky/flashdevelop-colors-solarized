@@ -1,5 +1,10 @@
 # FD UI THEME (5.1+)
 
+Global.UiRenderMode=Professional
+
+ComboBox.FlatStyle=Popup
+
+ListView.UseGrouping=True
 ListView.Highlight=#268bd2
 ListView.HighlightText=#002b36
 TreeView.Highlight=#268bd2
@@ -23,9 +28,9 @@ DataTreeControl.ErrorText=#dc322f
 DataTreeControl.HighlightText=#002b36
 DataTreeControl.LineColor=#eee8d5
 
+ProjectTreeView.InputColor=#b58900
 ProjectTreeView.SubItemColor=#657b83
 ProjectTreeView.ErrorColor=#dc322f
-ProjectTreeView.InputColor=#b58900
 
 CompletionList.SelectedTextColor=#002b36
 CompletionList.SelectedBackColor=#268bd2
@@ -54,12 +59,17 @@ VS2005AutoHideStrip.TabUnderlineColor=#839496
 
 DockPanel.ShowAutoHideContentOn=Hover
 
-ScrollBar.ForeColor=#839496
+ScrollBar.UseCustom=True
 ScrollBar.BackColor=#eee8d5
-ScrollBar.BorderColor=#eee8d5
-ScrollBar.ActiveForeColor=#073642
 ScrollBar.DisabledBackColor=#eee8d5
+ScrollBar.BorderColor=#eee8d5
 ScrollBar.DisabledBorderColor=#eee8d5
+ScrollBar.ForeColor=#839496
+ScrollBar.HotForeColor=#657b83
+ScrollBar.ActiveForeColor=#073642
+ScrollBar.ArrowColor=#839496
+ScrollBar.HotArrowColor=#657b83
+ScrollBar.ActiveArrowColor=#073642
 ScrollBar.CurrentPositionColor=#ffbf00
 
 LinkLabel.LinkColor=#268bd2
