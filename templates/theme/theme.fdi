@@ -1,5 +1,10 @@
 ### {theme-name}.fdi
 
+# FD UI THEME (5.2+)
+
+# Use custom scrollbar styles everywhere (True) or just in the editor (False)
+ScrollBar.UseGlobally=True
+
 # FD UI THEME (5.1+)
 
 # Toolbars (main and panel toolbars)
