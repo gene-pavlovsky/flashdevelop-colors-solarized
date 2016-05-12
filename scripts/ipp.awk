@@ -3,34 +3,34 @@
 # A minimalistic preprocessor.
 #
 # Command-line options:
-#   -DNAME    defines the specified name
+#   -DNAME    defines a symbol with the specified name (symbols may be used with #ifdef or #ifndef directives)
 #
-# TODO: Add error checking and support for nested (recursive) conditional blocks.
+# TODO: Add error checking and support for nested (recursive) conditional blocks, and maybe if/elif directives.
 #
 # Supported directives:
-#   #include "filename"
+#   #include "FILENAME"
 #     Includes the contents of the specified file, indenting them according to the indent level of the #include directive.
-#     Nested (recursive) includes are supported.
+#     A file may contain preprocessor directives as well, they will also be processed.
 #   #define NAME
-#     Defines the specified name.
+#     Defines a symbol with the specified name. Symbols are used with #ifdef or #ifndef directives.
 #   #undef NAME
-#     Undefines the specified name.
+#     Undefines a symbol with the specified name.
 #   #ifdef NAME
-#     If the specified name is defined, includes the following section until the next #else or #endif directive.
+#     If a symbol with the specified name is defined, includes the following block until the next #else or #endif directive.
 #   #ifndef NAME
-#     If the specified name is not defined, includes the following section until the next #else or #endif directive.
+#     If a symbol with the specified name is not defined, includes the following block until the next #else or #endif directive.
 #   #else
-#     Inverts the last #ifdef or #ifndef directive - respectfully omits or includes the following section until the next #endif directive.
+#     Inverts the last #ifdef or #ifndef directive - respectfully omits or includes the following block until the next #endif directive.
 #   #endif
-#     Ends the conditional block started by the last #ifdef or #ifndef directive.
+#     Marks the end of an #ifdef or #ifndef conditional block.
 #   #warning
 #     Outputs a warning to stderr.
 #   #error
-#     Outputs an error to stderr, and exits with an error code of 2.
+#     Outputs an error to stderr, and exits with an error code of 10.
 #
 
 function msg(message, exit_code) {
-	# TODO: Display current filename and line number (process_line() must use a stack to keep track of them).
+	# TODO: Display current filename and line number (process_line() should use a stack to keep track of them).
 	print message >> "/dev/stderr"
 	if ((exit_code != "") && (exit_code >= 0))
 		exit exit_code
@@ -70,7 +70,7 @@ function process_line(indent) {
 		else if ($1 == "#warning")
 			msg("warning: " gensub(/^[[:space:]]*#warning[[:space:]]*/, "", 1));
 		else if ($1 == "#error")
-			die("error: " gensub(/^[[:space:]]*#error[[:space:]]*/, "", 1));
+			die("error: " gensub(/^[[:space:]]*#error[[:space:]]*/, "", 1), 10);
 		else
 			print indent $0
 	}
