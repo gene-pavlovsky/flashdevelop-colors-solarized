@@ -5,18 +5,18 @@
 COLORS=$(dirname "$0")/solarized.txt
 
 usage() {
-  {
-    echo "Usage: "$(basename "$0")" [options] filename"
-    echo
+	{
+		echo "Usage: "$(basename "$0")" [options] filename"
+		echo
 		echo "Options:"
-		echo -e "      --help\t\tprint this help, then exit"
-		echo -e "  -l, --light\t\tswitch colors to light color scheme (default is dark)"
-		echo -e "  -H, --high-contrast\tadjust color scheme to high-contrast"
-		echo -e "  -q, --quote\t\tenclose color values in double quotes (\")"
-		echo -e "  -c, --c-prefix\tuse C-style hexadecimal prefix (0x) instead of hash (#)"
-		echo -e "  -s, --script\t\tinstead of processing a file, output a sed script file to stdout"
-  } >&2
-  exit 2
+		echo -e "      --help                 print this help, then exit"
+		echo -e "  -l, --light                switch colors to light color scheme (default is dark)"
+		echo -e "  -H, --high-contrast        adjust color scheme to high-contrast"
+		echo -e "  -q, --quote                enclose color values in double quotes (\")"
+		echo -e "  -c, --c-prefix             use C-style hexadecimal prefix (0x) instead of hash (#)"
+		echo -e "  -s, --script               instead of processing a file, output a sed script file to stdout"
+	} >&2
+	exit 2
 }
 
 quote=

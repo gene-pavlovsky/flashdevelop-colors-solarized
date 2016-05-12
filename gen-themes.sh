@@ -66,7 +66,7 @@ else
 	THEME_RMC=/dev/null
 fi
 
-INCLUDE_PP="scripts/include_pp.awk"
+INCLUDE_PP="scripts/ipp.awk"
 SQUEEZE="scripts/cat-s.sed"
 
 ZIP="7z a -tzip -xr!*.tmp"
