@@ -9,7 +9,7 @@ s,{content2},{base00},g
 s,{content3},{base0},g
 s,{content4},{base1},g
 s,{highlight1},{base2},g
-#s,{highlight2},{base3},g
+s,{highlight2},{base3},g
 
 s,{highlight-back},{blue},g
 
