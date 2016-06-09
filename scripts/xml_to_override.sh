@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# xml_to_override.sh: reads all xml files in a directory containing FlashDevelop syntax coloring xml files, strips everything but the coloring settings, outputs to .override files   
+# Reads all xml files in a directory containing FlashDevelop syntax coloring xml files, strips everything but the coloring settings, outputs to .override files.   
 
 dir=$(dirname "$0")
 for file in *.xml; do

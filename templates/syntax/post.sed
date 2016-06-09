@@ -1,4 +1,5 @@
-# ******************************************************************************
+#!/bin/sed -f
+#
 # Syntax Coloring (common, applied after theme-specific script)
 #
 

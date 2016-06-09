@@ -1,6 +1,6 @@
 #/bin/sed -f
 #
-# cat-s.sed: removes leading and trailing blank lines, replaces multiple consecutive blank lines with a single blank line
+# Removes leading and trailing blank lines. Replaces multiple consecutive blank lines with a single blank line.
 
 # Delete all leading blank lines.
 1,/^[ \t]*[^ \t]/ {
