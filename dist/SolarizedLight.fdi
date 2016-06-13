@@ -41,7 +41,7 @@ CompletionList.SelectedBackColor=#268bd2
 CompletionList.PackageColor=#657b83
 
 MethodCallTip.SelectedFore=#002b36
-MethodCallTip.SelectedBack=#134569
+MethodCallTip.SelectedBack=#eee8d5
 MethodCallTip.InfoColor=#657b83
 
 DataGridView.LineColor=#eee8d5

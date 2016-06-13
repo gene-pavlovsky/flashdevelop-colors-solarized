@@ -95,10 +95,8 @@ if test "$high_contrast"; then
 fi
 
 if test "$script"; then
-	cat <<-END
-		#!/bin/sed -f
-		#
-	END
+	echo '#!/bin/sed -f'
+	echo '#'
 	echo -n '# Solarized Colors ('
 	test "$light" && echo -n "light" || echo -n "dark"
 	test "$high_contrast" && echo -n ', high-contrast'

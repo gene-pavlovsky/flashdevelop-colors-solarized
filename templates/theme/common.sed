@@ -1,6 +1,6 @@
 #!/bin/sed -f
 #
-# Theme (common, applied before theme-specific script)
+# Theme (common, applied after theme-specific script)
 #
 
 s,{background1},{base03},g

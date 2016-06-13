@@ -48,15 +48,13 @@ BASE_PATH=$(realpath $(dirname "$0"))
 SRC_PATH="templates"
 
 SYNTAX_PATH="$SRC_PATH/syntax"
-SYNTAX_PRE="$SYNTAX_PATH/pre.sed"
 SYNTAX_DARK="$SYNTAX_PATH/dark.sed"
 SYNTAX_LIGHT="$SYNTAX_PATH/light.sed"
-SYNTAX_POST="$SYNTAX_PATH/post.sed"
+SYNTAX_COMMON="$SYNTAX_PATH/common.sed"
 THEME_PATH="$SRC_PATH/theme"
-THEME_PRE="$THEME_PATH/pre.sed"
 THEME_DARK="$THEME_PATH/dark.sed"
 THEME_LIGHT="$THEME_PATH/light.sed"
-THEME_POST="$THEME_PATH/post.sed"
+THEME_COMMON="$THEME_PATH/common.sed"
 
 if test -z "$comments"; then
 	SYNTAX_RMC="$SYNTAX_PATH/rm-comments.sed"
@@ -90,7 +88,7 @@ gen_syntax() {
 	eval local syntax='${SYNTAX_'${1^^}'}'
 	{
 		echo '<!-- COLORING_START -->'
-		(cd $SYNTAX_PATH && exec awk -f "$BASE_PATH/$INCLUDE_PP" "$BASE_PATH/$2") | sed -f $SYNTAX_PRE -f $syntax -f $SYNTAX_POST -f $1/solarize.sed -f $SYNTAX_RMC | sed -f $SQUEEZE || error syntax-$1: "$3"
+		(cd $SYNTAX_PATH && exec awk -f "$BASE_PATH/$INCLUDE_PP" "$BASE_PATH/$2") | sed -f $syntax -f $SYNTAX_COMMON -f $1/solarize.sed -f $SYNTAX_RMC | sed -f $SQUEEZE || error syntax-$1: "$3"
 		echo -n '<!-- COLORING_END -->'
 	} >"$1/$3"
 }
@@ -98,7 +96,7 @@ gen_syntax() {
 gen_theme() {
 	echo "  Solarized${1^}.fdi"
 	eval local theme='${THEME_'${1^^}'}'
-	sed -f $THEME_PRE -f $theme -f $THEME_POST -f $1/solarize.sed -f $THEME_RMC $THEME_PATH/theme.fdi | sed -f $SQUEEZE >dist/Solarized$1.fdi || error theme-$1
+	sed -f $theme -f $THEME_COMMON -f $1/solarize.sed -f $THEME_RMC $THEME_PATH/theme.fdi | sed -f $SQUEEZE >dist/Solarized$1.fdi || error theme-$1
 }
 
 package_theme() {

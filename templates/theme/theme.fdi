@@ -82,7 +82,7 @@ CompletionList.PackageColor={content2}
 # Selected argument text
 MethodCallTip.SelectedFore={highlight1}
 # Selected argument background
-MethodCallTip.SelectedBack={blue-min}
+MethodCallTip.SelectedBack={background2}
 # Additional info text
 MethodCallTip.InfoColor={content2}
 

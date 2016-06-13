@@ -1,6 +1,6 @@
 #!/bin/sed -f
 #
-# Syntax Coloring (common, applied before theme-specific script)
+# Syntax Coloring (common, applied after theme-specific script)
 #
 
 # Disabled
@@ -61,3 +61,6 @@ s,{commentdockeyworderror-back},{red},g
 # Language-specific
 s,{xml-number-fore},{blue},g
 s,{python-word-fore},{yellow},g
+
+# Replace multiple consecutive spaces with a single space.
+s/  \+/ /g
