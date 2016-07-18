@@ -1,6 +1,7 @@
 #!/bin/awk -f
 #
 # Helper script for xml_to_override.sh.
+#
 
 /COLORING_END/ {
 	exit 0

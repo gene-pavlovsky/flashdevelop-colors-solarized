@@ -1,5 +1,6 @@
 #!/bin/sh
 #
-# gen-docs.sh: generates docs
+# Generates docs.
+#
 
 exec ./gen-themes.sh -d

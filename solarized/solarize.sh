@@ -1,6 +1,7 @@
 #!/bin/sh
 #
-# solarize.sh: reads a file, replaces Solarized color names enclosed in curly braces "{}" with their RGB values, outputs to stdout
+# Reads a file, replaces Solarized color names enclosed in curly braces "{}" with their RGB values, outputs to stdout.
+#
 
 COLORS=$(dirname "$0")/solarized.txt
 

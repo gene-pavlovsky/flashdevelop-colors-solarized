@@ -1,6 +1,7 @@
 #!/bin/sh
 #
-# gen-themes.sh: generates theme files from a set of templates and sed scripts, and packages them for import into FlashDevelop
+# Generates theme files from a set of templates and sed scripts, and packages them for import into FlashDevelop.
+#
 
 usage() {
 	{

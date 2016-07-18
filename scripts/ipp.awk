@@ -68,9 +68,9 @@ function process_line(indent) {
 		else if ($1 == "#endif")
 			;
 		else if ($1 == "#warning")
-			msg("warning: " gensub(/^[[:space:]]*#warning[[:space:]]*/, "", 1));
+			msg("warning: " gensub(/^[[:space:]]*#warning[[:space:]]*/, "", 1))
 		else if ($1 == "#error")
-			die("error: " gensub(/^[[:space:]]*#error[[:space:]]*/, "", 1), 10);
+			die("error: " gensub(/^[[:space:]]*#error[[:space:]]*/, "", 1), 10)
 		else
 			print indent $0
 	}
